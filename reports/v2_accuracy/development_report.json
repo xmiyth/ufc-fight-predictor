@@ -1,0 +1,444 @@
+{
+  "created_at": "2026-09-02T05:08:03.127599+00:00",
+  "development_period": [
+    "1994-03-11",
+    "2024-12-31"
+  ],
+  "walk_forward_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "lockbox_policy": "2025-01-01 onward untouched during development",
+  "selected_experiment": {
+    "name": "logistic_rich_548_c1",
+    "family": "logistic",
+    "feature_set": "rich_548",
+    "params": {
+      "C": 1.0
+    }
+  },
+  "selected_features": [
+    "age_diff",
+    "age_squared_diff",
+    "height_diff",
+    "reach_diff",
+    "ufc_wins_diff",
+    "ufc_losses_diff",
+    "ufc_fights_diff",
+    "ufc_win_pct_diff",
+    "last_1_win_diff",
+    "recent_3_win_pct_diff",
+    "recent_5_win_pct_diff",
+    "current_win_streak_diff",
+    "current_loss_streak_diff",
+    "days_since_last_fight_diff",
+    "fights_previous_12m_diff",
+    "fights_previous_24m_diff",
+    "finish_rate_diff",
+    "ko_tko_rate_diff",
+    "submission_rate_diff",
+    "decision_rate_diff",
+    "average_fight_duration_diff",
+    "five_round_experience_diff",
+    "elo_diff",
+    "elo_k16_diff",
+    "elo_k24_diff",
+    "elo_k48_diff",
+    "recency_adjusted_elo_diff",
+    "weight_class_elo_diff",
+    "average_opponent_elo_diff",
+    "average_beaten_opponent_elo_diff",
+    "average_lost_opponent_elo_diff",
+    "high_elo_wins_diff",
+    "high_elo_losses_diff",
+    "quality_adjusted_win_rate_diff",
+    "quality_adjusted_finish_rate_diff",
+    "sig_landed_pm_diff",
+    "sig_absorbed_pm_diff",
+    "sig_accuracy_diff",
+    "striking_defense_diff",
+    "striking_differential_pm_diff",
+    "strike_volume_pm_diff",
+    "knockdowns_per15_diff",
+    "takedowns_per15_diff",
+    "takedown_accuracy_diff",
+    "takedown_defense_diff",
+    "submissions_per15_diff",
+    "reversals_per15_diff",
+    "control_pct_diff",
+    "opponent_adjusted_accuracy_diff",
+    "opponent_adjusted_striking_differential_diff",
+    "opponent_adjusted_striking_defense_diff",
+    "opponent_adjusted_takedown_offense_diff",
+    "opponent_adjusted_takedown_defense_diff",
+    "opponent_adjusted_submission_activity_diff",
+    "age_x_experience_diff",
+    "age_x_layoff_diff",
+    "head_strike_share_diff",
+    "body_strike_share_diff",
+    "leg_strike_share_diff",
+    "distance_strike_share_diff",
+    "clinch_strike_share_diff",
+    "ground_strike_share_diff",
+    "a_td_offense_vs_b_defense",
+    "b_td_offense_vs_a_defense",
+    "a_striking_offense_vs_b_defense",
+    "b_striking_offense_vs_a_defense",
+    "a_submission_threat_vs_b_grappling",
+    "b_submission_threat_vs_a_grappling",
+    "scheduled_rounds",
+    "five_round_fight",
+    "division_women",
+    "division_light",
+    "division_middle",
+    "division_heavy",
+    "division_other",
+    "age_diff_x_division_light",
+    "age_diff_x_division_heavy",
+    "reach_diff_x_division_light",
+    "wrestling_matchup_x_division_light",
+    "wrestling_matchup_x_division_heavy",
+    "sig_landed_pm_decay_548d_diff",
+    "sig_absorbed_pm_decay_548d_diff",
+    "sig_accuracy_decay_548d_diff",
+    "striking_defense_decay_548d_diff",
+    "striking_differential_pm_decay_548d_diff",
+    "strike_volume_pm_decay_548d_diff",
+    "knockdowns_per15_decay_548d_diff",
+    "takedowns_per15_decay_548d_diff",
+    "takedown_accuracy_decay_548d_diff",
+    "takedown_defense_decay_548d_diff",
+    "submissions_per15_decay_548d_diff",
+    "reversals_per15_decay_548d_diff",
+    "control_pct_decay_548d_diff",
+    "opponent_adjusted_accuracy_decay_548d_diff",
+    "opponent_adjusted_striking_differential_decay_548d_diff",
+    "opponent_adjusted_striking_defense_decay_548d_diff",
+    "opponent_adjusted_takedown_offense_decay_548d_diff",
+    "opponent_adjusted_takedown_defense_decay_548d_diff",
+    "opponent_adjusted_submission_activity_decay_548d_diff",
+    "head_strike_share_decay_548d_diff",
+    "body_strike_share_decay_548d_diff",
+    "leg_strike_share_decay_548d_diff",
+    "distance_strike_share_decay_548d_diff",
+    "clinch_strike_share_decay_548d_diff",
+    "ground_strike_share_decay_548d_diff",
+    "form_decay_548d_diff",
+    "opponent_elo_decay_548d_diff"
+  ],
+  "selected_metrics": {
+    "accuracy": 0.6121212121212121,
+    "roc_auc": 0.6460495601950171,
+    "log_loss": 0.6640601044962018,
+    "brier": 0.23494835125117206,
+    "ece": 0.024586753132688655
+  },
+  "selected_95pct_bootstrap_ci": {
+    "accuracy": [
+      0.5942676767676768,
+      0.6303030303030303
+    ],
+    "roc_auc": [
+      0.6256219552359361,
+      0.6654816950360325
+    ],
+    "log_loss": [
+      0.6520384916126662,
+      0.676872898803224
+    ],
+    "brier": [
+      0.22953148757701383,
+      0.24055546250057705
+    ],
+    "ece": [
+      0.01803563876131483,
+      0.04498354347034403
+    ]
+  },
+  "calibration": [
+    {
+      "bucket": "50%-55%",
+      "fights": 670,
+      "mean_prediction": 0.5253485507866448,
+      "observed_win_rate": 0.5373134328358209
+    },
+    {
+      "bucket": "55%-60%",
+      "fights": 668,
+      "mean_prediction": 0.5750260934258742,
+      "observed_win_rate": 0.5763473053892215
+    },
+    {
+      "bucket": "60%-65%",
+      "fights": 536,
+      "mean_prediction": 0.6240591641577102,
+      "observed_win_rate": 0.6082089552238806
+    },
+    {
+      "bucket": "65%-70%",
+      "fights": 433,
+      "mean_prediction": 0.6726798827255116,
+      "observed_win_rate": 0.6327944572748267
+    },
+    {
+      "bucket": "70%-75%",
+      "fights": 285,
+      "mean_prediction": 0.7229120925067054,
+      "observed_win_rate": 0.6912280701754386
+    },
+    {
+      "bucket": "75%-80%",
+      "fights": 202,
+      "mean_prediction": 0.7731705872437291,
+      "observed_win_rate": 0.7079207920792079
+    },
+    {
+      "bucket": "80%-90%",
+      "fights": 155,
+      "mean_prediction": 0.8377920707292327,
+      "observed_win_rate": 0.7612903225806451
+    },
+    {
+      "bucket": "90%-100%",
+      "fights": 21,
+      "mean_prediction": 0.9185399562031764,
+      "observed_win_rate": 0.7142857142857143
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark": "better_recent_form",
+      "accuracy": 0.560942760942761,
+      "fights": 2970
+    },
+    {
+      "benchmark": "better_ufc_win_pct",
+      "accuracy": 0.5717171717171717,
+      "fights": 2970
+    },
+    {
+      "benchmark": "elo",
+      "accuracy": 0.5531986531986532,
+      "fights": 2970
+    },
+    {
+      "benchmark": "elo_k16",
+      "accuracy": 0.5505050505050505,
+      "fights": 2970
+    },
+    {
+      "benchmark": "elo_k24",
+      "accuracy": 0.5515151515151515,
+      "fights": 2970
+    },
+    {
+      "benchmark": "elo_k48",
+      "accuracy": 0.5531986531986532,
+      "fights": 2970
+    },
+    {
+      "benchmark": "majority",
+      "accuracy": 0.5131313131313131,
+      "fights": 2970
+    },
+    {
+      "benchmark": "random",
+      "accuracy": 0.4919191919191919,
+      "fights": 2970
+    },
+    {
+      "benchmark": "recency_adjusted_elo",
+      "accuracy": 0.5478114478114479,
+      "fights": 2970
+    },
+    {
+      "benchmark": "weight_class_elo",
+      "accuracy": 0.5531986531986532,
+      "fights": 2970
+    }
+  ],
+  "ablation": [
+    {
+      "removed_group": "age",
+      "remaining_features": 101,
+      "accuracy": 0.5959595959595959,
+      "roc_auc": 0.6361094774978854,
+      "log_loss": 0.6668807284368502,
+      "brier": 0.2364640699712215,
+      "ece": 0.0227789363522916
+    },
+    {
+      "removed_group": "physical",
+      "remaining_features": 104,
+      "accuracy": 0.6053872053872054,
+      "roc_auc": 0.6427210732475868,
+      "log_loss": 0.6658558826363623,
+      "brier": 0.2358034399677537,
+      "ece": 0.0280676202967872
+    },
+    {
+      "removed_group": "recent_form",
+      "remaining_features": 101,
+      "accuracy": 0.6104377104377104,
+      "roc_auc": 0.6451043334313502,
+      "log_loss": 0.6642429806688832,
+      "brier": 0.2350715534462035,
+      "ece": 0.0281879641141878
+    },
+    {
+      "removed_group": "activity",
+      "remaining_features": 104,
+      "accuracy": 0.6063973063973064,
+      "roc_auc": 0.6461158122869496,
+      "log_loss": 0.6637623405219074,
+      "brier": 0.2348784597836718,
+      "ece": 0.0266510785620278
+    },
+    {
+      "removed_group": "career",
+      "remaining_features": 98,
+      "accuracy": 0.6107744107744107,
+      "roc_auc": 0.64573690477487,
+      "log_loss": 0.6642094692771698,
+      "brier": 0.2350274137528547,
+      "ece": 0.0263609020444829
+    },
+    {
+      "removed_group": "striking",
+      "remaining_features": 83,
+      "accuracy": 0.5993265993265994,
+      "roc_auc": 0.6321139318166142,
+      "log_loss": 0.6683926801601588,
+      "brier": 0.2374383354352372,
+      "ece": 0.0313086287730945
+    },
+    {
+      "removed_group": "grappling",
+      "remaining_features": 84,
+      "accuracy": 0.6111111111111112,
+      "roc_auc": 0.6461698122796891,
+      "log_loss": 0.6627539320777455,
+      "brier": 0.2346908449091501,
+      "ece": 0.0234405785187589
+    },
+    {
+      "removed_group": "opponent_quality",
+      "remaining_features": 81,
+      "accuracy": 0.6016835016835017,
+      "roc_auc": 0.6365700656712516,
+      "log_loss": 0.6661133951954734,
+      "brier": 0.2364851016240796,
+      "ece": 0.0221952736386057
+    },
+    {
+      "removed_group": "elo_rating",
+      "remaining_features": 95,
+      "accuracy": 0.6016835016835017,
+      "roc_auc": 0.6410271070887923,
+      "log_loss": 0.6645457263091098,
+      "brier": 0.2356024122085062,
+      "ece": 0.0253325786301321
+    },
+    {
+      "removed_group": "matchup_interactions",
+      "remaining_features": 101,
+      "accuracy": 0.6101010101010101,
+      "roc_auc": 0.6469162827675586,
+      "log_loss": 0.6631248856130929,
+      "brier": 0.2345954012508014,
+      "ece": 0.0216237816294083
+    },
+    {
+      "removed_group": "context",
+      "remaining_features": 95,
+      "accuracy": 0.6077441077441077,
+      "roc_auc": 0.6465264845006407,
+      "log_loss": 0.6631062230265006,
+      "brier": 0.234628249687934,
+      "ece": 0.0218833887744073
+    },
+    {
+      "removed_group": "time_decay",
+      "remaining_features": 80,
+      "accuracy": 0.6077441077441077,
+      "roc_auc": 0.6471862827312561,
+      "log_loss": 0.6621486298874174,
+      "brier": 0.2342447791983663,
+      "ece": 0.0164238499636023
+    },
+    {
+      "removed_group": "opponent_adjusted_performance",
+      "remaining_features": 95,
+      "accuracy": 0.6097643097643097,
+      "roc_auc": 0.6454723501885916,
+      "log_loss": 0.664130035902784,
+      "brier": 0.2350871809430821,
+      "ece": 0.036958284328215074
+    }
+  ],
+  "fixed_ensemble": {
+    "accuracy": 0.6148148148148148,
+    "roc_auc": 0.6534257776906517,
+    "log_loss": 0.6567010475592985,
+    "brier": 0.232124177289432,
+    "ece": 0.02369720365627613,
+    "definition": "fixed 50% selected model + 50% core logistic; no lockbox tuning"
+  },
+  "paired_bootstrap_comparisons": {
+    "selected_vs_logistic": {
+      "accuracy": {
+        "mean_difference": 0.007008080808080808,
+        "95pct_ci": [
+          -0.008754208754208754,
+          0.022895622895622896
+        ]
+      },
+      "log_loss": {
+        "mean_difference": 0.004185816791015535,
+        "95pct_ci": [
+          -0.003196606114236097,
+          0.01169773905467726
+        ]
+      },
+      "brier": {
+        "mean_difference": 0.0012164894300363647,
+        "95pct_ci": [
+          -0.0019895308315312213,
+          0.004514892511321916
+        ]
+      }
+    },
+    "ensemble_vs_selected": {
+      "accuracy": {
+        "mean_difference": 0.0024444444444444444,
+        "95pct_ci": [
+          -0.007070707070707071,
+          0.012457912457912458
+        ]
+      },
+      "log_loss": {
+        "mean_difference": -0.007343806293014204,
+        "95pct_ci": [
+          -0.011326188582364814,
+          -0.0034174959813409135
+        ]
+      },
+      "brier": {
+        "mean_difference": -0.002807199177396641,
+        "95pct_ci": [
+          -0.004459980776510234,
+          -0.0011849197228619916
+        ]
+      }
+    }
+  },
+  "model_families_unavailable": {
+    "LightGBM": "not installed; omitted to avoid adding a redundant dependency before evidence of need",
+    "CatBoost": "not installed; omitted because the current inputs are numeric and do not exploit its categorical specialization",
+    "betting_favorite": "no verified point-in-time historical odds in the immutable source"
+  }
+}

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ufc-predictor"
+version = "0.1.0"
+description = "Leakage-safe UFC fight winner prediction baseline"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas==2.3.2",
+  "scikit-learn==1.7.1",
+  "joblib==1.5.2",
+  "xgboost==3.4.1",
+  "lightgbm==4.7.0",
+  "catboost==1.2.10",
+  "fastapi==0.141.1",
+  "uvicorn==0.52.4",
+]
+
+[project.scripts]
+ufc-train = "ufc_predictor.train:main"
+ufc-evaluate = "ufc_predictor.evaluate:main"
+ufc-web = "ufc_predictor.web:main"
+ufc-method-train = "ufc_predictor.method_model:main"
+ufc-predict = "ufc_predictor.predict:main"
+ufc-download = "ufc_predictor.download_data:main"
+ufc-v2-refresh = "ufc_predictor.v2_data:main"
+ufc-v2-evaluate = "ufc_predictor.v2_evaluate:main"
+ufc-v2-method-evaluate = "ufc_predictor.v2_method:main"
+ufc-v2-accuracy-analysis = "ufc_predictor.v2_accuracy_analysis:main"
+ufc-v2-accuracy-development = "ufc_predictor.v2_accuracy_development:main"
+ufc-v2-accuracy-final = "ufc_predictor.v2_accuracy_final:main"
+ufc-v3-evaluate = "ufc_predictor.v3_evaluate:main"
+ufc-v3-analyze = "ufc_predictor.v3_analyze:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

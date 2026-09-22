@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-09-11T08:22:54.577034+00:00",
+  "status": "prospective_candidate_not_production_champion",
+  "architecture": {
+    "gate": "use baseline branch if either fighter has zero prior UFC fights; V4 branch otherwise",
+    "prior_fights": 4.0,
+    "weights": [
+      0.25,
+      0.75
+    ],
+    "components": [
+      "logistic",
+      "xgboost"
+    ]
+  },
+  "selection_period": [
+    "2019-01-01",
+    "2022-12-31"
+  ],
+  "confirmation_period": [
+    "2023-01-01",
+    "2024-12-31"
+  ],
+  "confirmation_metrics": {
+    "accuracy": 0.6283185840707964,
+    "roc_auc": 0.6580444854194429,
+    "log_loss": 0.6540367769762863,
+    "brier": 0.23114424467733585,
+    "ece": 0.04110528516235935
+  },
+  "verified_v2_1_champion_accuracy": 0.6269430051813472,
+  "promotion": "not promoted; requires untouched fights after 2026-09-11",
+  "training_rows": 8581,
+  "training_range": [
+    "1994-03-11",
+    "2026-06-27"
+  ],
+  "checksums": {
+    "artifact_sha256": "4B9C1DDDFD8FE1E63A6BAB14D7E00388D12E0D8485B7AED2AA434909133CB221",
+    "v4_prospective_code_sha256": "B4151C11B9826513E071C1C94A55F718641E2E98456973482845DCDC1F29BC4E",
+    "v4_analysis_sha256": "1A2908D6ABDAE8EE2BD04E9158C68BA97416BA2C8F0685AE39EC48A4B500403F",
+    "raw_fights_sha256": "F2FEFA556E0FF05CF9E623FCB93BEB30A8F24419E14C081E16185F2EB2E7D093",
+    "raw_fighters_sha256": "ABF221520B439317D7F81C3CE35B17FA3E9E399658BEE64C23FF3C7523D990C7"
+  }
+}

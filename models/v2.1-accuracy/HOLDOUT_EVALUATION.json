@@ -1,0 +1,230 @@
+{
+  "model_version": "UFC Predictor V2.1 Accuracy Experiment",
+  "evaluated_at": "2026-09-02T05:12:57.183069+00:00",
+  "evaluation_count": 1,
+  "lockbox_period": [
+    "2025-01-11",
+    "2026-06-27"
+  ],
+  "training_period": [
+    "1994-03-11",
+    "2024-12-14"
+  ],
+  "training_fights": 7809,
+  "holdout_fights": 772,
+  "metrics": {
+    "accuracy": 0.6269430051813472,
+    "roc_auc": 0.6678714050807074,
+    "log_loss": 0.6485664867647497,
+    "brier": 0.2286705821459315,
+    "ece": 0.026502542244704653
+  },
+  "accuracy_95pct_ci": [
+    0.5919689119170984,
+    0.6606217616580311
+  ],
+  "confidence_buckets": [
+    {
+      "bucket": "50%-55%",
+      "fights": 220,
+      "coverage": 0.2849740932642487,
+      "average_predicted_probability": 0.5235493501043063,
+      "actual_win_rate": 0.5727272727272728,
+      "accuracy": 0.5727272727272728
+    },
+    {
+      "bucket": "55%-60%",
+      "fights": 206,
+      "coverage": 0.266839378238342,
+      "average_predicted_probability": 0.5731636431673828,
+      "actual_win_rate": 0.5679611650485437,
+      "accuracy": 0.5679611650485437
+    },
+    {
+      "bucket": "60%-65%",
+      "fights": 146,
+      "coverage": 0.18911917098445596,
+      "average_predicted_probability": 0.6233929138383071,
+      "actual_win_rate": 0.6506849315068494,
+      "accuracy": 0.6506849315068494
+    },
+    {
+      "bucket": "65%-70%",
+      "fights": 105,
+      "coverage": 0.13601036269430053,
+      "average_predicted_probability": 0.6733178486160585,
+      "actual_win_rate": 0.6761904761904762,
+      "accuracy": 0.6761904761904762
+    },
+    {
+      "bucket": "70%-75%",
+      "fights": 57,
+      "coverage": 0.07383419689119171,
+      "average_predicted_probability": 0.7210364898134862,
+      "actual_win_rate": 0.7192982456140351,
+      "accuracy": 0.7192982456140351
+    },
+    {
+      "bucket": "75%-80%",
+      "fights": 28,
+      "coverage": 0.03626943005181347,
+      "average_predicted_probability": 0.7728809159118759,
+      "actual_win_rate": 0.8928571428571429,
+      "accuracy": 0.8928571428571429
+    },
+    {
+      "bucket": "80%+",
+      "fights": 10,
+      "coverage": 0.012953367875647668,
+      "average_predicted_probability": 0.8175565605378721,
+      "actual_win_rate": 0.9,
+      "accuracy": 0.9
+    }
+  ],
+  "coverage_of_buckets_with_at_least_75pct_accuracy": 0.04922279792746114,
+  "benchmarks": {
+    "majority": 0.49870466321243523,
+    "better_ufc_win_pct": 0.5803108808290155,
+    "better_recent_record": 0.5790155440414507,
+    "elo": 0.5595854922279793
+  },
+  "strongest_simple_baseline": "better_ufc_win_pct",
+  "paired_vs_strongest_baseline": {
+    "difference": 0.046632124352331605,
+    "95pct_ci": [
+      0.007772020725388601,
+      0.08549222797927461
+    ],
+    "statistically_meaningful": true
+  },
+  "comparison_to_v1": {
+    "published_v1_accuracy": 0.6082,
+    "accuracy_difference": 0.018743005181347194,
+    "statistically_meaningful_by_v2_ci": false,
+    "note": "unpaired comparison because V1 used a different historical test split"
+  },
+  "by_year": [
+    {
+      "year": 2025,
+      "fights": 515,
+      "accuracy": 0.6368932038834951,
+      "roc_auc": 0.6708903799075165,
+      "log_loss": 0.6482478241529388,
+      "brier": 0.22859235355265653,
+      "ece": 0.043733573320269045
+    },
+    {
+      "year": 2026,
+      "fights": 257,
+      "accuracy": 0.6070038910505836,
+      "roc_auc": 0.6632118034386051,
+      "log_loss": 0.6492050519207133,
+      "brier": 0.22882734372389496,
+      "ece": 0.017766309785386056
+    }
+  ],
+  "by_weight_class_minimum_20_fights": [
+    {
+      "weight_class": "bantamweight",
+      "fights": 88,
+      "accuracy": 0.6136363636363636,
+      "roc_auc": 0.6534181240063592,
+      "log_loss": 0.6541944658412612,
+      "brier": 0.23152580515458246,
+      "ece": 0.08123901450476476
+    },
+    {
+      "weight_class": "featherweight",
+      "fights": 95,
+      "accuracy": 0.6421052631578947,
+      "roc_auc": 0.6320921985815604,
+      "log_loss": 0.6728593384412048,
+      "brier": 0.2394782936652232,
+      "ece": 0.09796029873728627
+    },
+    {
+      "weight_class": "flyweight",
+      "fights": 60,
+      "accuracy": 0.6,
+      "roc_auc": 0.6233031674208145,
+      "log_loss": 0.6567419550459616,
+      "brier": 0.2326127581647737,
+      "ece": 0.06903261368696453
+    },
+    {
+      "weight_class": "heavyweight",
+      "fights": 53,
+      "accuracy": 0.5849056603773585,
+      "roc_auc": 0.6564285714285714,
+      "log_loss": 0.64988170395022,
+      "brier": 0.22943893407225563,
+      "ece": 0.1545610744972992
+    },
+    {
+      "weight_class": "light_heavyweight",
+      "fights": 55,
+      "accuracy": 0.5818181818181818,
+      "roc_auc": 0.6273209549071618,
+      "log_loss": 0.6726390217186439,
+      "brier": 0.24042905137651996,
+      "ece": 0.08923560712974667
+    },
+    {
+      "weight_class": "lightweight",
+      "fights": 103,
+      "accuracy": 0.6213592233009708,
+      "roc_auc": 0.7013574660633485,
+      "log_loss": 0.6307881072427362,
+      "brier": 0.2207166444890838,
+      "ece": 0.08401423763805106
+    },
+    {
+      "weight_class": "middleweight",
+      "fights": 108,
+      "accuracy": 0.6481481481481481,
+      "roc_auc": 0.6603448275862069,
+      "log_loss": 0.6457546035861964,
+      "brier": 0.22756858737230362,
+      "ece": 0.05863192350349436
+    },
+    {
+      "weight_class": "welterweight",
+      "fights": 86,
+      "accuracy": 0.5813953488372093,
+      "roc_auc": 0.6184210526315789,
+      "log_loss": 0.6719412084097276,
+      "brier": 0.23970940558252452,
+      "ece": 0.07543713446300446
+    },
+    {
+      "weight_class": "womens_bantamweight",
+      "fights": 32,
+      "accuracy": 0.71875,
+      "roc_auc": 0.7692307692307693,
+      "log_loss": 0.5919804707992582,
+      "brier": 0.20193946064514334,
+      "ece": 0.2015801025815645
+    },
+    {
+      "weight_class": "womens_flyweight",
+      "fights": 32,
+      "accuracy": 0.78125,
+      "roc_auc": 0.8268398268398268,
+      "log_loss": 0.5952329752817095,
+      "brier": 0.20217115204127106,
+      "ece": 0.1921702287381623
+    },
+    {
+      "weight_class": "womens_strawweight",
+      "fights": 47,
+      "accuracy": 0.6382978723404256,
+      "roc_auc": 0.7236842105263158,
+      "log_loss": 0.6420349823666157,
+      "brier": 0.22503599787461598,
+      "ece": 0.07403179967892638
+    }
+  ],
+  "architecture_lock_sha256": "BC684332291787D3B748AA8520721886F775964F4142FC2626CFE8FBC852B329",
+  "data_sha256": "F2FEFA556E0FF05CF9E623FCB93BEB30A8F24419E14C081E16185F2EB2E7D093",
+  "methodology": "one-time score after architecture/weights/features were locked"
+}

@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-09-11T08:18:53.340799+00:00",
+  "scientific_status": "prospective development; inspected 2025-2026 outcomes were not scored",
+  "selection_period": [
+    "2019-01-01",
+    "2022-12-31"
+  ],
+  "confirmation_period": [
+    "2023-01-01",
+    "2024-12-31"
+  ],
+  "future_final_holdout": "must begin after 2026-09-11",
+  "baseline": {
+    "development": {
+      "accuracy": 0.6057347670250897,
+      "roc_auc": 0.6566270811258799,
+      "log_loss": 0.6541347237477627,
+      "brier": 0.2311250927071202,
+      "ece": 0.023761975520993867
+    },
+    "confirmation": {
+      "accuracy": 0.6273352999016716,
+      "roc_auc": 0.6511841860609253,
+      "log_loss": 0.6562341937778684,
+      "brier": 0.23223979930232488,
+      "ece": 0.04272042093364616
+    }
+  },
+  "selected_by_development_only": {
+    "name": "low_history_bayes_k4",
+    "prior_fights": 4.0,
+    "development_accuracy": 0.6098310291858678,
+    "development_roc_auc": 0.6558392169616349,
+    "development_log_loss": 0.654012923345245,
+    "development_brier": 0.23112878663829514,
+    "development_ece": 0.017949127482394318,
+    "confirmation_accuracy": 0.6194690265486725,
+    "confirmation_roc_auc": 0.659225959899594,
+    "confirmation_log_loss": 0.6535014818775593,
+    "confirmation_brier": 0.23086773993083137,
+    "confirmation_ece": 0.024062840833839656,
+    "fold_accuracy_std": 0.030571282689106256
+  },
+  "selected_confirmation": {
+    "accuracy": 0.6194690265486725,
+    "roc_auc": 0.659225959899594,
+    "log_loss": 0.6535014818775593,
+    "brier": 0.23086773993083137,
+    "ece": 0.024062840833839656
+  },
+  "promotion_rule_passed": false,
+  "promotion_decision": "rejected; keep V2.1 as verified champion",
+  "method": "training-fold division medians, empirical-Bayes shrinkage, explicit low-history modes, median imputation with indicators",
+  "locked_artifacts_modified": false
+}

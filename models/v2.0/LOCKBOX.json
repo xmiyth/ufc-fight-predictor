@@ -1,0 +1,21 @@
+{
+  "version": "V2 development lockbox declaration",
+  "declared_on": "2026-09-01",
+  "lockbox_start": "2025-01-01",
+  "lockbox_end": "latest completed fight available at final evaluation",
+  "development_validation_end": "2024-12-31",
+  "allowed_during_development": [
+    "row counts",
+    "date coverage",
+    "schema validation",
+    "leakage invariance tests that do not score outcomes"
+  ],
+  "forbidden_until_architecture_is_locked": [
+    "lockbox model metrics",
+    "lockbox feature selection",
+    "lockbox hyperparameter selection",
+    "lockbox ensemble weighting",
+    "lockbox calibration fitting"
+  ],
+  "evaluation_policy": "Score the final selected V2 architecture once, persist the result, and do not iterate against it."
+}

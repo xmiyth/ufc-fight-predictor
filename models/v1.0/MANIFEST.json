@@ -1,0 +1,21 @@
+{
+  "release": "UFC Predictor Model V1.0",
+  "status": "frozen",
+  "model_type": "Pruned Rich Logistic Regression",
+  "artifact": "ufc_predictor_v1_0.joblib",
+  "feature_count": 39,
+  "historical_fights": 8581,
+  "trained_through": "2026-06-27",
+  "evaluation_train_period": ["1994-03-11", "2022-10-29"],
+  "evaluation_test_period": ["2022-11-05", "2026-06-27"],
+  "sha256": {
+    "ufc_predictor_v1_0.joblib": "E592F2FFF8EE03B5A860BBF3FC5F8C82C1ECFE9668379C2AE219AC965719F825",
+    "evaluation.json": "958B68DF8E7CA43EF80BF187BBD8C8E6A3CC81E6F9624FDEDCEF51C40BB61E58",
+    "requirements.txt": "C331743AD3AD42FBF550C0EE1B4278D25D38F7D3282210FB709C12958720F701",
+    "source/features.py": "4FEE7DB415D298C04434D4C87922F885D0CEA421E140A67DF53A279460CF507B",
+    "source/predict.py": "43FCE03F8E3D11771FBEB93956911FD3DAAC9424B7307137AAC4E9133E80A805"
+  },
+  "load": "joblib.load('models/v1.0/ufc_predictor_v1_0.joblib')",
+  "note": "The deployment artifact was copied byte-for-byte; no retraining or reevaluation was performed."
+}
+

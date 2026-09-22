@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-09-11T08:20:49.100323+00:00",
+  "gate_selected_on_development": "V2 for any debutant; V4 otherwise",
+  "periods": {
+    "development": {
+      "fights": 1953,
+      "baseline": {
+        "accuracy": 0.6057347670250897,
+        "roc_auc": 0.6566270811258799,
+        "log_loss": 0.6541347237477627,
+        "brier": 0.2311250927071202,
+        "ece": 0.023761975520993867
+      },
+      "candidate": {
+        "accuracy": 0.6098310291858678,
+        "roc_auc": 0.6558392169616349,
+        "log_loss": 0.654012923345245,
+        "brier": 0.23112878663829511,
+        "ece": 0.017949127482394318
+      },
+      "gated_candidate": {
+        "accuracy": 0.611879160266257,
+        "roc_auc": 0.6579678140178974,
+        "log_loss": 0.65330122580655,
+        "brier": 0.23075585835600645,
+        "ece": 0.010752423114117093
+      },
+      "subgroups": {
+        "involves_debutant": {
+          "fights": 397,
+          "baseline_accuracy": 0.6196473551637279,
+          "candidate_accuracy": 0.6095717884130982
+        },
+        "involves_1_or_2_no_debutant": {
+          "fights": 575,
+          "baseline_accuracy": 0.5947826086956521,
+          "candidate_accuracy": 0.5965217391304348
+        },
+        "both_3_plus": {
+          "fights": 981,
+          "baseline_accuracy": 0.6065239551478083,
+          "candidate_accuracy": 0.617737003058104
+        }
+      }
+    },
+    "confirmation": {
+      "fights": 1017,
+      "baseline": {
+        "accuracy": 0.6273352999016716,
+        "roc_auc": 0.6511841860609253,
+        "log_loss": 0.6562341937778684,
+        "brier": 0.23223979930232488,
+        "ece": 0.04272042093364616
+      },
+      "candidate": {
+        "accuracy": 0.6194690265486725,
+        "roc_auc": 0.659225959899594,
+        "log_loss": 0.6535014818775593,
+        "brier": 0.23086773993083137,
+        "ece": 0.02406284083383964
+      },
+      "gated_candidate": {
+        "accuracy": 0.6283185840707964,
+        "roc_auc": 0.6580444854194429,
+        "log_loss": 0.6540367769762863,
+        "brier": 0.23114424467733585,
+        "ece": 0.04110528516235935
+      },
+      "subgroups": {
+        "involves_debutant": {
+          "fights": 199,
+          "baseline_accuracy": 0.6331658291457286,
+          "candidate_accuracy": 0.5879396984924623
+        },
+        "involves_1_or_2_no_debutant": {
+          "fights": 251,
+          "baseline_accuracy": 0.5936254980079682,
+          "candidate_accuracy": 0.5776892430278885
+        },
+        "both_3_plus": {
+          "fights": 567,
+          "baseline_accuracy": 0.6402116402116402,
+          "candidate_accuracy": 0.6490299823633157
+        }
+      }
+    }
+  },
+  "changed_predictions": {
+    "development": {
+      "changed": 132,
+      "became_correct": 70,
+      "became_incorrect": 62,
+      "gated_changed": 102,
+      "gated_became_correct": 57,
+      "gated_became_incorrect": 45
+    },
+    "confirmation": {
+      "changed": 100,
+      "became_correct": 46,
+      "became_incorrect": 54,
+      "gated_changed": 71,
+      "gated_became_correct": 36,
+      "gated_became_incorrect": 35
+    }
+  }
+}

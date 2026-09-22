@@ -1,0 +1,305 @@
+{
+  "version": "V1.1 advanced candidate",
+  "fixed_test_period": [
+    "2022-11-05",
+    "2026-06-27"
+  ],
+  "test_fights": 1863,
+  "validation_policy": "OOF 2019-2020 tuning; OOF 2021 through 2022-10-29 confirmation; no final-test selection",
+  "selected_architecture": {
+    "components": [
+      "logistic",
+      "hist_gradient",
+      "elo"
+    ],
+    "weights": [
+      0.2,
+      0.4,
+      0.4
+    ],
+    "tuning": {
+      "accuracy": 0.6105263157894737,
+      "roc_auc": 0.6485611383152365,
+      "log_loss": 0.6600109456724298,
+      "brier": 0.233863126275586,
+      "ece": 0.03440129768842108
+    },
+    "confirmation": {
+      "accuracy": 0.6329386437029063,
+      "roc_auc": 0.6695264846024065,
+      "log_loss": 0.6537621661732563,
+      "brier": 0.2307844524407002,
+      "ece": 0.053614201348634545
+    }
+  },
+  "calibration": {
+    "selected": "uncalibrated",
+    "confirmation_scores": {
+      "uncalibrated": {
+        "accuracy": 0.6329386437029063,
+        "roc_auc": 0.6695264846024065,
+        "log_loss": 0.6537621661732563,
+        "brier": 0.2307844524407002,
+        "ece": 0.053614201348634545
+      },
+      "platt": {
+        "accuracy": 0.6243272335844995,
+        "roc_auc": 0.6695264846024065,
+        "log_loss": 0.6492499319397924,
+        "brier": 0.22879032441166813,
+        "ece": 0.0331439502867151
+      },
+      "isotonic": {
+        "accuracy": 0.6307857911733046,
+        "roc_auc": 0.6624418302834788,
+        "log_loss": 0.6646713572659393,
+        "brier": 0.22904954580768083,
+        "ece": 0.047087134213586436
+      }
+    }
+  },
+  "v1_0_full_rich": {
+    "accuracy": 0.6119162640901772,
+    "roc_auc": 0.6467342425444382,
+    "log_loss": 0.6576949602863081,
+    "brier": 0.23299572030026264,
+    "ece": 0.020910628366280833,
+    "confidence_buckets": [
+      {
+        "bucket": "50%-55%",
+        "fights": 523,
+        "coverage": 0.28073000536768655,
+        "average_predicted_probability": 0.5246982235754232,
+        "actual_win_rate": 0.5621414913957935,
+        "accuracy": 0.5621414913957935
+      },
+      {
+        "bucket": "55%-60%",
+        "fights": 465,
+        "coverage": 0.249597423510467,
+        "average_predicted_probability": 0.5741398609180326,
+        "actual_win_rate": 0.5634408602150538,
+        "accuracy": 0.5634408602150538
+      },
+      {
+        "bucket": "60%-65%",
+        "fights": 342,
+        "coverage": 0.18357487922705315,
+        "average_predicted_probability": 0.6241590153221376,
+        "actual_win_rate": 0.6052631578947368,
+        "accuracy": 0.6052631578947368
+      },
+      {
+        "bucket": "65%-70%",
+        "fights": 266,
+        "coverage": 0.14278046162104133,
+        "average_predicted_probability": 0.6738717156283747,
+        "actual_win_rate": 0.6766917293233082,
+        "accuracy": 0.6766917293233082
+      },
+      {
+        "bucket": "70%-75%",
+        "fights": 158,
+        "coverage": 0.08480944712828771,
+        "average_predicted_probability": 0.7214311104829734,
+        "actual_win_rate": 0.689873417721519,
+        "accuracy": 0.689873417721519
+      },
+      {
+        "bucket": "75%-80%",
+        "fights": 74,
+        "coverage": 0.03972088030059045,
+        "average_predicted_probability": 0.7722184534645731,
+        "actual_win_rate": 0.7702702702702703,
+        "accuracy": 0.7702702702702703
+      },
+      {
+        "bucket": "80%+",
+        "fights": 35,
+        "coverage": 0.01878690284487386,
+        "average_predicted_probability": 0.8477046688753428,
+        "actual_win_rate": 0.8857142857142857,
+        "accuracy": 0.8857142857142857
+      }
+    ]
+  },
+  "v1_1_hybrid": {
+    "accuracy": 0.5925925925925926,
+    "roc_auc": 0.6358460782776338,
+    "log_loss": 0.6628193602579416,
+    "brier": 0.2353836670305386,
+    "ece": 0.01950491049306129,
+    "confidence_buckets": [
+      {
+        "bucket": "50%-55%",
+        "fights": 588,
+        "coverage": 0.31561996779388085,
+        "average_predicted_probability": 0.524445206319938,
+        "actual_win_rate": 0.5085034013605442,
+        "accuracy": 0.5085034013605442
+      },
+      {
+        "bucket": "55%-60%",
+        "fights": 533,
+        "coverage": 0.28609769189479334,
+        "average_predicted_probability": 0.5740084413129402,
+        "actual_win_rate": 0.5778611632270169,
+        "accuracy": 0.5778611632270169
+      },
+      {
+        "bucket": "60%-65%",
+        "fights": 398,
+        "coverage": 0.21363392377885132,
+        "average_predicted_probability": 0.6218275257695802,
+        "actual_win_rate": 0.635678391959799,
+        "accuracy": 0.635678391959799
+      },
+      {
+        "bucket": "65%-70%",
+        "fights": 224,
+        "coverage": 0.1202361782071927,
+        "average_predicted_probability": 0.6722627802305156,
+        "actual_win_rate": 0.6517857142857143,
+        "accuracy": 0.6517857142857143
+      },
+      {
+        "bucket": "70%-75%",
+        "fights": 82,
+        "coverage": 0.0440150295222759,
+        "average_predicted_probability": 0.722224970507809,
+        "actual_win_rate": 0.8414634146341463,
+        "accuracy": 0.8414634146341463
+      },
+      {
+        "bucket": "75%-80%",
+        "fights": 23,
+        "coverage": 0.012345679012345678,
+        "average_predicted_probability": 0.7710617617754798,
+        "actual_win_rate": 0.6521739130434783,
+        "accuracy": 0.6521739130434783
+      },
+      {
+        "bucket": "80%+",
+        "fights": 15,
+        "coverage": 0.008051529790660225,
+        "average_predicted_probability": 0.8615625415536837,
+        "actual_win_rate": 0.9333333333333333,
+        "accuracy": 0.9333333333333333
+      }
+    ]
+  },
+  "prediction_changes": {
+    "changed": 312,
+    "changed_became_correct": 138,
+    "previously_correct_became_wrong": 174,
+    "mcnemar_exact_p_value": 0.04736307973961667,
+    "statistically_meaningful_at_0_05": true
+  },
+  "subgroups": {
+    "ufc_debutant": {
+      "fights": 349,
+      "v1_accuracy": 0.5444126074498568,
+      "v1_1_accuracy": 0.5100286532951289
+    },
+    "under_3_ufc_fights": {
+      "fights": 821,
+      "v1_accuracy": 0.5724725943970768,
+      "v1_1_accuracy": 0.5676004872107187
+    },
+    "both_3_plus": {
+      "fights": 1042,
+      "v1_accuracy": 0.6429942418426103,
+      "v1_1_accuracy": 0.6122840690978887
+    },
+    "large_age_gap_8_plus": {
+      "fights": 139,
+      "v1_accuracy": 0.6906474820143885,
+      "v1_1_accuracy": 0.6690647482014388
+    },
+    "large_reach_gap_6_plus": {
+      "fights": 96,
+      "v1_accuracy": 0.6770833333333334,
+      "v1_1_accuracy": 0.6666666666666666
+    }
+  },
+  "by_weight_class": [
+    {
+      "weight_class": "bantamweight",
+      "fights": 214,
+      "v1_accuracy": 0.616822429906542,
+      "v1_1_accuracy": 0.616822429906542
+    },
+    {
+      "weight_class": "catch_weight",
+      "fights": 28,
+      "v1_accuracy": 0.6071428571428571,
+      "v1_1_accuracy": 0.5
+    },
+    {
+      "weight_class": "featherweight",
+      "fights": 225,
+      "v1_accuracy": 0.5822222222222222,
+      "v1_1_accuracy": 0.5244444444444445
+    },
+    {
+      "weight_class": "flyweight",
+      "fights": 146,
+      "v1_accuracy": 0.684931506849315,
+      "v1_1_accuracy": 0.6712328767123288
+    },
+    {
+      "weight_class": "heavyweight",
+      "fights": 123,
+      "v1_accuracy": 0.6422764227642277,
+      "v1_1_accuracy": 0.6260162601626016
+    },
+    {
+      "weight_class": "light_heavyweight",
+      "fights": 124,
+      "v1_accuracy": 0.6048387096774194,
+      "v1_1_accuracy": 0.5645161290322581
+    },
+    {
+      "weight_class": "lightweight",
+      "fights": 254,
+      "v1_accuracy": 0.6377952755905512,
+      "v1_1_accuracy": 0.594488188976378
+    },
+    {
+      "weight_class": "middleweight",
+      "fights": 230,
+      "v1_accuracy": 0.6,
+      "v1_1_accuracy": 0.6304347826086957
+    },
+    {
+      "weight_class": "welterweight",
+      "fights": 216,
+      "v1_accuracy": 0.5601851851851852,
+      "v1_1_accuracy": 0.5416666666666666
+    },
+    {
+      "weight_class": "womens_bantamweight",
+      "fights": 72,
+      "v1_accuracy": 0.6527777777777778,
+      "v1_1_accuracy": 0.625
+    },
+    {
+      "weight_class": "womens_featherweight",
+      "fights": 5,
+      "v1_accuracy": 0.8,
+      "v1_1_accuracy": 0.8
+    },
+    {
+      "weight_class": "womens_flyweight",
+      "fights": 98,
+      "v1_accuracy": 0.6530612244897959,
+      "v1_1_accuracy": 0.673469387755102
+    },
+    {
+      "weight_class": "womens_strawweight",
+      "fights": 128,
+      "v1_accuracy": 0.546875,
+      "v1_1_accuracy": 0.5234375
+    }
+  ]
+}

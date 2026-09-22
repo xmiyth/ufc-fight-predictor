@@ -1,0 +1,58 @@
+{
+  "model_version": "UFC Predictor V2.1 Accuracy Experiment",
+  "locked_at": "2026-09-02T05:15:00Z",
+  "status": "architecture locked before final holdout evaluation",
+  "final_holdout": {
+    "start": "2025-01-01",
+    "end": "latest completed fight in immutable snapshot",
+    "evaluation_policy": "score exactly once; never tune from these outcomes"
+  },
+  "architecture": {
+    "type": "probability ensemble",
+    "feature_set": "rich_548",
+    "feature_count": 107,
+    "components": [
+      {
+        "name": "logistic_rich_548_c1",
+        "family": "regularized logistic regression",
+        "weight": 0.25,
+        "parameters": {"C": 1.0, "penalty": "l2"}
+      },
+      {
+        "name": "xgboost_rich548",
+        "family": "XGBoost",
+        "weight": 0.75,
+        "parameters": {
+          "n_estimators": 350,
+          "learning_rate": 0.025,
+          "max_depth": 2,
+          "min_child_weight": 8,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8
+        }
+      }
+    ],
+    "calibration": "none; no validation evidence justified an additional calibrator",
+    "missing_data": "training-fold median imputation with missing indicators",
+    "feature_schema_source": "reports/v2_accuracy/development_final.json"
+  },
+  "selection_evidence": {
+    "development_period": "2019-2024 walk-forward out-of-fold predictions",
+    "ensemble_weight_tuning": "2019-2022 only",
+    "ensemble_confirmation": "2023-2024 only",
+    "development_accuracy": 0.6131313131313131,
+    "development_roc_auc": 0.6548497438857488,
+    "development_log_loss": 0.654853633182314,
+    "development_brier": 0.23150679526850845,
+    "development_ece": 0.01745668098723034
+  },
+  "checksums": {
+    "development_final_sha256": "A91F2AB2EB156FE20B9379035C622406A0A4F065300781112F13CA688DF91AB2",
+    "ensemble_analysis_sha256": "63C8D75E1B1370774714812F4EE753DB09E1EBA8ED9F5C1A22400EFB35CD798D",
+    "raw_fights_sha256": "F2FEFA556E0FF05CF9E623FCB93BEB30A8F24419E14C081E16185F2EB2E7D093",
+    "raw_fighters_sha256": "ABF221520B439317D7F81C3CE35B17FA3E9E399658BEE64C23FF3C7523D990C7",
+    "v2_features_sha256": "0F1A53F6A3A0D873CD3C90028938A7FA46BD8067D3F4B27AD3E5FCEA6F93DEFE",
+    "v2_evaluate_sha256": "99ED6F291DA3BD1A6B7FB1445EF80A3337B57247770D6F989501869FACE7ECF0",
+    "v1_model_sha256": "E592F2FFF8EE03B5A860BBF3FC5F8C82C1ECFE9668379C2AE219AC965719F825"
+  }
+}

@@ -1,0 +1,6 @@
+[console_scripts]
+ufc-download = ufc_predictor.download_data:main
+ufc-evaluate = ufc_predictor.evaluate:main
+ufc-predict = ufc_predictor.predict:main
+ufc-train = ufc_predictor.train:main
+ufc-web = ufc_predictor.web:main

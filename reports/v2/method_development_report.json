@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-09-01T07:24:25.875619+00:00",
+  "formulation": "unconditional P(method | matchup); separate from winner model",
+  "selected_experiment": {
+    "name": "method_xgboost",
+    "family": "xgboost",
+    "params": {
+      "n_estimators": 300,
+      "learning_rate": 0.025,
+      "max_depth": 2,
+      "min_child_weight": 8,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    }
+  },
+  "features": [
+    "finish_rate_mean",
+    "ko_tko_rate_mean",
+    "submission_rate_mean",
+    "decision_rate_mean",
+    "average_fight_duration_mean",
+    "ufc_fights_mean",
+    "recent_3_win_pct_mean",
+    "quality_adjusted_win_rate_mean",
+    "age_mean",
+    "sig_landed_pm_mean",
+    "sig_absorbed_pm_mean",
+    "sig_accuracy_mean",
+    "striking_defense_mean",
+    "knockdowns_per15_mean",
+    "takedowns_per15_mean",
+    "takedown_accuracy_mean",
+    "takedown_defense_mean",
+    "submissions_per15_mean",
+    "control_pct_mean",
+    "head_strike_share_mean",
+    "body_strike_share_mean",
+    "leg_strike_share_mean",
+    "distance_strike_share_mean",
+    "clinch_strike_share_mean",
+    "ground_strike_share_mean",
+    "finish_rate_abs_diff",
+    "ko_tko_rate_abs_diff",
+    "submission_rate_abs_diff",
+    "decision_rate_abs_diff",
+    "average_fight_duration_abs_diff",
+    "ufc_fights_abs_diff",
+    "recent_3_win_pct_abs_diff",
+    "quality_adjusted_win_rate_abs_diff",
+    "age_abs_diff",
+    "sig_landed_pm_abs_diff",
+    "sig_absorbed_pm_abs_diff",
+    "sig_accuracy_abs_diff",
+    "striking_defense_abs_diff",
+    "knockdowns_per15_abs_diff",
+    "takedowns_per15_abs_diff",
+    "takedown_accuracy_abs_diff",
+    "takedown_defense_abs_diff",
+    "submissions_per15_abs_diff",
+    "control_pct_abs_diff",
+    "head_strike_share_abs_diff",
+    "body_strike_share_abs_diff",
+    "leg_strike_share_abs_diff",
+    "distance_strike_share_abs_diff",
+    "clinch_strike_share_abs_diff",
+    "ground_strike_share_abs_diff",
+    "scheduled_rounds",
+    "five_round_fight",
+    "division_women",
+    "division_light",
+    "division_middle",
+    "division_heavy",
+    "division_other"
+  ],
+  "metrics": {
+    "accuracy": 0.5292131036811888,
+    "multiclass_log_loss": 0.9777589297937459,
+    "multiclass_brier": 0.5868480929814011,
+    "ece": 0.00973338267159842,
+    "per_class_recall": {
+      "Decision": 0.8502994011976048,
+      "KO/TKO": 0.3021276595744681,
+      "Submission": 0.009652509652509652
+    },
+    "confusion_matrix": [
+      [
+        1278,
+        216,
+        9
+      ],
+      [
+        650,
+        284,
+        6
+      ],
+      [
+        413,
+        100,
+        5
+      ]
+    ]
+  },
+  "majority_method_accuracy": 0.5075987841945289,
+  "class_order": [
+    "Decision",
+    "KO/TKO",
+    "Submission"
+  ],
+  "calibration_note": "top-class expected calibration error",
+  "reliability_note": "method probabilities are inherently less reliable than winner probabilities and must be shown as a distribution"
+}

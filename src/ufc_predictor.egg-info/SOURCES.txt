@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/ufc_predictor/__init__.py
+src/ufc_predictor/download_data.py
+src/ufc_predictor/evaluate.py
+src/ufc_predictor/features.py
+src/ufc_predictor/predict.py
+src/ufc_predictor/train.py
+src/ufc_predictor.egg-info/PKG-INFO
+src/ufc_predictor.egg-info/SOURCES.txt
+src/ufc_predictor.egg-info/dependency_links.txt
+src/ufc_predictor.egg-info/entry_points.txt
+src/ufc_predictor.egg-info/requires.txt
+src/ufc_predictor.egg-info/top_level.txt
+tests/test_features.py

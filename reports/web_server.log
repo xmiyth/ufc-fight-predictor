@@ -1,0 +1,17 @@
+INFO:     127.0.0.1:41300 - "GET /api/fighters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41300 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41300 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41305 - "GET /api/fighters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48128 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48128 - "GET /api/fighters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48128 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:2084 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:24949 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43925 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2782 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44843 - "POST /api/predict HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50770 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1057 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39517 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41241 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:30810 - "POST /api/predict HTTP/1.1" 200 OK

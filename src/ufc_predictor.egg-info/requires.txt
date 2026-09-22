@@ -1,0 +1,6 @@
+pandas==2.3.2
+scikit-learn==1.7.1
+joblib==1.5.2
+xgboost==3.4.1
+fastapi==0.141.1
+uvicorn==0.52.4

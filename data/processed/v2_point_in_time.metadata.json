@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-09-01T04:47:52.478011+00:00",
+  "source_sha256": {
+    "fights": "F2FEFA556E0FF05CF9E623FCB93BEB30A8F24419E14C081E16185F2EB2E7D093",
+    "fighters": "ABF221520B439317D7F81C3CE35B17FA3E9E399658BEE64C23FF3C7523D990C7"
+  },
+  "rows": 8737,
+  "columns": 217,
+  "feature_count": 155,
+  "strict_rule": "feature_timestamp < fight_timestamp; prior bouts only; same-date batch"
+}

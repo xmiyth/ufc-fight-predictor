@@ -1,0 +1,8 @@
+name,family,params,features,validation_fights,accuracy,multiclass_log_loss,multiclass_brier,ece
+method_xgboost,xgboost,"{'n_estimators': 300, 'learning_rate': 0.025, 'max_depth': 2, 'min_child_weight': 8, 'subsample': 0.8, 'colsample_bytree': 0.8}",57,2961,0.5292131036811888,0.9777589297937459,0.5868480929814011,0.00973338267159842
+method_gradient_boosting,gradient_boosting,"{'n_estimators': 80, 'learning_rate': 0.04, 'max_depth': 2}",57,2961,0.5231340763255656,0.9786112997522833,0.5869983523257983,0.016914789370486828
+method_random_forest,random_forest,"{'n_estimators': 250, 'min_samples_leaf': 10, 'max_features': 'sqrt'}",57,2961,0.5234718000675448,0.9789177392006634,0.5874945686823149,0.013350064361835114
+method_extra_trees,extra_trees,"{'n_estimators': 250, 'min_samples_leaf': 8, 'max_features': 0.7}",57,2961,0.5086119554204661,0.9854508529500086,0.5928245035412275,0.031854731112837806
+method_logistic_c0.1,logistic,{'C': 0.1},57,2961,0.5130023640661938,0.9864722080950346,0.5926137291956975,0.023294513228228786
+method_logistic_c1,logistic,{'C': 1.0},57,2961,0.5123269165822357,0.9866795986226203,0.5927219017972407,0.02383183512737942
+method_hist_gradient,hist_gradient,"{'max_iter': 180, 'learning_rate': 0.04, 'max_leaf_nodes': 15, 'l2_regularization': 2.0}",57,2961,0.5069233367105708,1.0023866149244778,0.6029935502547988,0.044224444761169185

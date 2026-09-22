@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-09-02T05:06:54.499533+00:00",
+  "weight_tuning_period": "2019-2022 walk-forward out-of-fold predictions",
+  "confirmation_period": "2023-2024 walk-forward out-of-fold predictions",
+  "rule": "keep only if accuracy improves and both log loss and Brier decrease on tuning and confirmation",
+  "base_logistic_tuning": {
+    "accuracy": 0.6052227342549923,
+    "roc_auc": 0.6441975010753139,
+    "log_loss": 0.6664003626286539,
+    "brier": 0.23576665607003588,
+    "ece": 0.030958794861671128
+  },
+  "base_logistic_confirmation": {
+    "accuracy": 0.6253687315634219,
+    "roc_auc": 0.6487515107378597,
+    "log_loss": 0.6595659804719355,
+    "brier": 0.23337691633353086,
+    "ece": 0.03677001162186981
+  },
+  "standalone_confirmation": {
+    "logistic": {
+      "accuracy": 0.6253687315634219,
+      "roc_auc": 0.6487515107378597,
+      "log_loss": 0.6595659804719355,
+      "brier": 0.23337691633353086,
+      "ece": 0.03677001162186981
+    },
+    "core_logistic": {
+      "accuracy": 0.6037364798426745,
+      "roc_auc": 0.6475003098949457,
+      "log_loss": 0.6566837290204351,
+      "brier": 0.23258649066581907,
+      "ece": 0.019854310686323467
+    },
+    "xgboost": {
+      "accuracy": 0.616519174041298,
+      "roc_auc": 0.6454123926988751,
+      "log_loss": 0.6592315745799612,
+      "brier": 0.23365696046276377,
+      "ece": 0.04009877871189772
+    },
+    "gradient_boosting": {
+      "accuracy": 0.6027531956735497,
+      "roc_auc": 0.6336441321392049,
+      "log_loss": 0.6644357106954706,
+      "brier": 0.2360381096182377,
+      "ece": 0.02526072239138089
+    },
+    "random_forest": {
+      "accuracy": 0.5988200589970502,
+      "roc_auc": 0.6434523071678702,
+      "log_loss": 0.6610598491455572,
+      "brier": 0.23436560445592114,
+      "ece": 0.015765457327432612
+    },
+    "elo": {
+      "accuracy": 0.5457227138643068,
+      "roc_auc": 0.5635517059716757,
+      "log_loss": 0.6855100770197806,
+      "brier": 0.2462451810382491,
+      "ece": 0.009035243465172083
+    }
+  },
+  "chosen_by_family": [
+    {
+      "family": "logistic+core_logistic",
+      "components": [
+        "logistic",
+        "core_logistic"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "tune": {
+        "accuracy": 0.6098310291858678,
+        "roc_auc": 0.6521663641799813,
+        "log_loss": 0.6584291733910551,
+        "brier": 0.23271491952192228,
+        "ece": 0.033971240822291277
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6243854473942969,
+        "roc_auc": 0.6552476835352815,
+        "log_loss": 0.6533824342363677,
+        "brier": 0.23098974309075598,
+        "ece": 0.028650635757339546
+      },
+      "kept_after_confirmation": false
+    },
+    {
+      "family": "logistic+gradient_boosting",
+      "components": [
+        "logistic",
+        "gradient_boosting"
+      ],
+      "weights": [
+        0.25,
+        0.75
+      ],
+      "tune": {
+        "accuracy": 0.6129032258064516,
+        "roc_auc": 0.6559577637666412,
+        "log_loss": 0.6556744542794465,
+        "brier": 0.2318341872788538,
+        "ece": 0.02318759606936077
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6116027531956736,
+        "roc_auc": 0.6464234249589389,
+        "log_loss": 0.6592971256581538,
+        "brier": 0.23361101174677332,
+        "ece": 0.03495509252578635
+      },
+      "kept_after_confirmation": false
+    },
+    {
+      "family": "logistic+gradient_boosting+elo",
+      "components": [
+        "logistic",
+        "gradient_boosting",
+        "elo"
+      ],
+      "weights": [
+        0.2,
+        0.6,
+        0.20000000000000007
+      ],
+      "tune": {
+        "accuracy": 0.6067588325652842,
+        "roc_auc": 0.6553587352209902,
+        "log_loss": 0.6586890021342511,
+        "brier": 0.23318007517084555,
+        "ece": 0.03183353986386026
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6116027531956736,
+        "roc_auc": 0.6450134029563978,
+        "log_loss": 0.6617996882186541,
+        "brier": 0.2347235825672351,
+        "ece": 0.03883436707403093
+      },
+      "kept_after_confirmation": false
+    },
+    {
+      "family": "logistic+random_forest+elo",
+      "components": [
+        "logistic",
+        "random_forest",
+        "elo"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.39999999999999997
+      ],
+      "tune": {
+        "accuracy": 0.6098310291858678,
+        "roc_auc": 0.6513166038963083,
+        "log_loss": 0.6599697911057791,
+        "brier": 0.23380562342781494,
+        "ece": 0.03448772969665291
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6057030481809242,
+        "roc_auc": 0.6477443521646161,
+        "log_loss": 0.6603481295852963,
+        "brier": 0.23404023630321544,
+        "ece": 0.030095151361726278
+      },
+      "kept_after_confirmation": false
+    },
+    {
+      "family": "logistic+xgboost",
+      "components": [
+        "logistic",
+        "xgboost"
+      ],
+      "weights": [
+        0.25,
+        0.75
+      ],
+      "tune": {
+        "accuracy": 0.6057347670250897,
+        "roc_auc": 0.6566270811258799,
+        "log_loss": 0.6541347237477627,
+        "brier": 0.2311250927071202,
+        "ece": 0.023761975520993867
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6273352999016716,
+        "roc_auc": 0.6511841860609253,
+        "log_loss": 0.6562341937778684,
+        "brier": 0.23223979930232488,
+        "ece": 0.04272042093364616
+      },
+      "kept_after_confirmation": true
+    },
+    {
+      "family": "logistic+xgboost+elo",
+      "components": [
+        "logistic",
+        "xgboost",
+        "elo"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.39999999999999997
+      ],
+      "tune": {
+        "accuracy": 0.6088069636456733,
+        "roc_auc": 0.6512756895122795,
+        "log_loss": 0.6596199190165699,
+        "brier": 0.23364150483966237,
+        "ece": 0.031261234113252025
+      },
+      "eligible_on_tuning": true,
+      "confirmation": {
+        "accuracy": 0.6204523107177975,
+        "roc_auc": 0.6477366047909758,
+        "log_loss": 0.6601561174921178,
+        "brier": 0.2339543893041681,
+        "ece": 0.043990090638150944
+      },
+      "kept_after_confirmation": false
+    }
+  ],
+  "selected_ensemble": {
+    "family": "logistic+xgboost",
+    "components": [
+      "logistic",
+      "xgboost"
+    ],
+    "weights": [
+      0.25,
+      0.75
+    ],
+    "tune": {
+      "accuracy": 0.6057347670250897,
+      "roc_auc": 0.6566270811258799,
+      "log_loss": 0.6541347237477627,
+      "brier": 0.2311250927071202,
+      "ece": 0.023761975520993867
+    },
+    "eligible_on_tuning": true,
+    "confirmation": {
+      "accuracy": 0.6273352999016716,
+      "roc_auc": 0.6511841860609253,
+      "log_loss": 0.6562341937778684,
+      "brier": 0.23223979930232488,
+      "ece": 0.04272042093364616
+    },
+    "kept_after_confirmation": true
+  }
+}

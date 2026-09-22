@@ -1,0 +1,15 @@
+{
+  "model_version": "V2.1-accuracy",
+  "created_at": "2026-09-02T05:13:13.282012+00:00",
+  "artifact": "ufc_predictor_v2_1_accuracy.joblib",
+  "artifact_sha256": "5C0725ED3BEC1FF9B82C9DB548963BC27279CB9DCB6852A462A7F443CB059416",
+  "features_sha256": "93E3A7D5B5104D4C3C8DF0E8891F72465C2227FE4D5D481E86D80ECEC8BA439B",
+  "architecture_lock_sha256": "BC684332291787D3B748AA8520721886F775964F4142FC2626CFE8FBC852B329",
+  "holdout_evaluation_sha256": "AF66D66FAB97ACC609396BEEC39F2580DF4E6D40F7B75B8A16A33B4784297C69",
+  "production_training_range": [
+    "1994-03-11",
+    "2026-06-27"
+  ],
+  "production_training_fights": 8581,
+  "website_integration": false
+}

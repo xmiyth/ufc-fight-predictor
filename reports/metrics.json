@@ -1,0 +1,92 @@
+{
+  "accuracy": 0.6049,
+  "baseline_accuracy": 0.511,
+  "baseline_method": "always predict the majority class from the training set",
+  "log_loss": 0.6626,
+  "total_fights": 8581,
+  "train_fights": 6718,
+  "test_fights": 1863,
+  "train_start": "1994-03-11",
+  "train_end": "2022-10-29",
+  "test_start": "2022-11-05",
+  "test_end": "2026-06-27",
+  "important_features": [
+    {
+      "feature": "age_diff",
+      "coefficient": -0.3037,
+      "magnitude": 0.3037
+    },
+    {
+      "feature": "ufc_wins_diff",
+      "coefficient": 0.2671,
+      "magnitude": 0.2671
+    },
+    {
+      "feature": "ufc_losses_diff",
+      "coefficient": -0.2358,
+      "magnitude": 0.2358
+    },
+    {
+      "feature": "sig_str_accuracy_diff",
+      "coefficient": 0.2243,
+      "magnitude": 0.2243
+    },
+    {
+      "feature": "sig_str_absorbed_pm_diff",
+      "coefficient": -0.1534,
+      "magnitude": 0.1534
+    },
+    {
+      "feature": "sig_str_landed_pm_diff",
+      "coefficient": 0.1242,
+      "magnitude": 0.1242
+    },
+    {
+      "feature": "recent_win_pct_diff",
+      "coefficient": 0.0853,
+      "magnitude": 0.0853
+    },
+    {
+      "feature": "reach_diff",
+      "coefficient": 0.0765,
+      "magnitude": 0.0765
+    },
+    {
+      "feature": "ufc_fights_diff",
+      "coefficient": 0.0687,
+      "magnitude": 0.0687
+    },
+    {
+      "feature": "record_win_pct_diff",
+      "coefficient": -0.0591,
+      "magnitude": 0.0591
+    },
+    {
+      "feature": "takedown_accuracy_diff",
+      "coefficient": 0.0454,
+      "magnitude": 0.0454
+    },
+    {
+      "feature": "submission_attempts_per15_diff",
+      "coefficient": -0.0374,
+      "magnitude": 0.0374
+    },
+    {
+      "feature": "takedown_defense_diff",
+      "coefficient": 0.027,
+      "magnitude": 0.027
+    },
+    {
+      "feature": "height_diff",
+      "coefficient": -0.0212,
+      "magnitude": 0.0212
+    }
+  ],
+  "leakage_audit": {
+    "chronological_train_before_test": true,
+    "forbidden_columns_in_features": [],
+    "duplicate_matchups_same_date": 0,
+    "fighter_a_win_rate": 0.4975,
+    "current_fight_updates_after_snapshot": true
+  }
+}

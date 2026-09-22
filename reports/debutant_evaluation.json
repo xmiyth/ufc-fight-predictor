@@ -1,0 +1,179 @@
+{
+  "task": "debutant-safe winner prediction",
+  "split": {
+    "train_end": "2022-10-29",
+    "test_start": "2022-11-05",
+    "train_fights": 6718,
+    "test_fights": 1863
+  },
+  "frozen_model": {
+    "sha256": "E592F2FFF8EE03B5A860BBF3FC5F8C82C1ECFE9668379C2AE219AC965719F825",
+    "metrics": {
+      "accuracy": 0.5856146001073538,
+      "roc_auc": 0.6226149351068638,
+      "log_loss": 0.6696087641878427,
+      "brier_score": 0.23852408434436714
+    },
+    "subgroups": {
+      "both_3_plus": {
+        "fights": 1042,
+        "accuracy": 0.5911708253358925
+      },
+      "involves_debutant": {
+        "fights": 349,
+        "accuracy": 0.5988538681948424
+      },
+      "involves_1_or_2_no_debutant": {
+        "fights": 472,
+        "accuracy": 0.5635593220338984
+      },
+      "both_debutants": {
+        "fights": 50,
+        "accuracy": 0.4
+      }
+    }
+  },
+  "same_structure_candidate": {
+    "features": [
+      "age_diff",
+      "height_diff",
+      "reach_diff",
+      "ufc_wins_diff",
+      "ufc_losses_diff",
+      "ufc_win_pct_diff",
+      "recent_3_win_pct_diff",
+      "recent_5_win_pct_diff",
+      "current_win_streak_diff",
+      "current_loss_streak_diff",
+      "sig_str_accuracy_diff",
+      "sig_str_landed_pm_diff",
+      "sig_str_absorbed_pm_diff",
+      "striking_differential_pm_diff",
+      "striking_defense_diff",
+      "knockdowns_per_fight_diff",
+      "head_strike_share_diff",
+      "body_strike_share_diff",
+      "leg_strike_share_diff",
+      "distance_strike_share_diff",
+      "clinch_strike_share_diff",
+      "ground_strike_share_diff",
+      "takedown_accuracy_diff",
+      "takedown_defense_diff",
+      "submission_attempts_per15_diff",
+      "finish_rate_diff",
+      "ko_tko_win_pct_diff",
+      "submission_win_pct_diff",
+      "decision_win_pct_diff",
+      "days_since_last_fight_diff",
+      "ufc_fights_diff",
+      "elo_diff",
+      "average_opponent_elo_diff",
+      "average_beaten_opponent_elo_diff",
+      "quality_adjusted_win_score_diff",
+      "fighter_a_td_accuracy_vs_b_defense",
+      "fighter_b_td_accuracy_vs_a_defense",
+      "fighter_a_striking_offense_vs_b_defense",
+      "fighter_b_striking_offense_vs_a_defense",
+      "ufc_debutant_diff",
+      "ko_tko_wins_diff",
+      "submission_wins_diff",
+      "decision_wins_diff",
+      "fighter_a_ufc_debutant",
+      "fighter_b_ufc_debutant",
+      "fighter_a_ufc_fights",
+      "fighter_b_ufc_fights",
+      "fighter_a_orthodox",
+      "fighter_a_southpaw",
+      "fighter_a_switch",
+      "fighter_b_orthodox",
+      "fighter_b_southpaw",
+      "fighter_b_switch",
+      "same_stance",
+      "weight_class_womens_strawweight",
+      "weight_class_womens_flyweight",
+      "weight_class_womens_bantamweight",
+      "weight_class_womens_featherweight",
+      "weight_class_flyweight",
+      "weight_class_bantamweight",
+      "weight_class_featherweight",
+      "weight_class_lightweight",
+      "weight_class_welterweight",
+      "weight_class_middleweight",
+      "weight_class_light_heavyweight",
+      "weight_class_heavyweight",
+      "weight_class_catch_weight",
+      "weight_class_open_weight",
+      "weight_class_other"
+    ],
+    "added_features": [
+      "ufc_debutant_diff",
+      "ko_tko_wins_diff",
+      "submission_wins_diff",
+      "decision_wins_diff",
+      "fighter_a_ufc_debutant",
+      "fighter_b_ufc_debutant",
+      "fighter_a_ufc_fights",
+      "fighter_b_ufc_fights",
+      "fighter_a_orthodox",
+      "fighter_a_southpaw",
+      "fighter_a_switch",
+      "fighter_b_orthodox",
+      "fighter_b_southpaw",
+      "fighter_b_switch",
+      "same_stance",
+      "weight_class_womens_strawweight",
+      "weight_class_womens_flyweight",
+      "weight_class_womens_bantamweight",
+      "weight_class_womens_featherweight",
+      "weight_class_flyweight",
+      "weight_class_bantamweight",
+      "weight_class_featherweight",
+      "weight_class_lightweight",
+      "weight_class_welterweight",
+      "weight_class_middleweight",
+      "weight_class_light_heavyweight",
+      "weight_class_heavyweight",
+      "weight_class_catch_weight",
+      "weight_class_open_weight",
+      "weight_class_other"
+    ],
+    "metrics": {
+      "accuracy": 0.5984970477724101,
+      "roc_auc": 0.634155720466013,
+      "log_loss": 0.6631507418429087,
+      "brier_score": 0.23557716983706317
+    },
+    "subgroups": {
+      "both_3_plus": {
+        "fights": 1042,
+        "accuracy": 0.6228406909788867
+      },
+      "involves_debutant": {
+        "fights": 349,
+        "accuracy": 0.5100286532951289
+      },
+      "involves_1_or_2_no_debutant": {
+        "fights": 472,
+        "accuracy": 0.6101694915254238
+      },
+      "both_debutants": {
+        "fights": 50,
+        "accuracy": 0.5
+      }
+    }
+  },
+  "candidate_demonstrably_improved": true,
+  "deployment_decision": "deployed_as_v1.1",
+  "unavailable_features": {
+    "professional_mma_record": "Not present as point-in-time history. Current UFCStats profile summaries would leak future results into old fights and are excluded.",
+    "previous_promotion": "Not present in the supplied datasets."
+  },
+  "leakage_audit": {
+    "snapshot_before_current_fight_update": true,
+    "debutant_ufc_performance_is_missing": true,
+    "training_set_median_imputation": true,
+    "future_profile_performance_summaries_used": false
+  },
+  "deployment_artifact": "models\\v1.1\\ufc_predictor_v1_1.joblib",
+  "deployment_sha256": "963D57104806D75F8FC9F8E5054D058797764EB0FCF753AB155C347D0D07245E"
+}

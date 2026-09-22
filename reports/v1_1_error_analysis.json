@@ -1,0 +1,154 @@
+{
+  "baseline": "V1.0 Full Rich Logistic",
+  "test_period": [
+    "2022-11-05",
+    "2026-06-27"
+  ],
+  "test_fights": 1863,
+  "incorrect_predictions": 723,
+  "error_rate": 0.38808373590982287,
+  "overlapping_category_counts": {
+    "ufc_debutant_or_very_low_experience": {
+      "count": 351,
+      "percent_of_errors": 48.54771784232365,
+      "available": true
+    },
+    "large_age_difference": {
+      "count": 43,
+      "percent_of_errors": 5.947441217150761,
+      "available": true
+    },
+    "large_reach_difference": {
+      "count": 31,
+      "percent_of_errors": 4.287690179806362,
+      "available": true
+    },
+    "large_size_difference": {
+      "count": 3,
+      "percent_of_errors": 0.4149377593360996,
+      "available": true
+    },
+    "fighter_moving_weight_classes": {
+      "count": 113,
+      "percent_of_errors": 15.629322268326417,
+      "available": true
+    },
+    "long_layoff": {
+      "count": 57,
+      "percent_of_errors": 7.8838174273858925,
+      "available": true
+    },
+    "short_notice": {
+      "count": 0,
+      "percent_of_errors": 0.0,
+      "available": false
+    },
+    "recent_decline": {
+      "count": 203,
+      "percent_of_errors": 28.077455048409405,
+      "available": true
+    },
+    "recent_improvement": {
+      "count": 103,
+      "percent_of_errors": 14.246196403872752,
+      "available": true
+    },
+    "wrestler_vs_striker": {
+      "count": 90,
+      "percent_of_errors": 12.448132780082988,
+      "available": true
+    },
+    "grappler_vs_weak_submission_defense": {
+      "count": 29,
+      "percent_of_errors": 4.011065006915629,
+      "available": true
+    },
+    "power_puncher_vs_poor_defense": {
+      "count": 45,
+      "percent_of_errors": 6.224066390041494,
+      "available": true
+    },
+    "low_data_fighter": {
+      "count": 351,
+      "percent_of_errors": 48.54771784232365,
+      "available": true
+    },
+    "close_50_50_fight": {
+      "count": 229,
+      "percent_of_errors": 31.673582295988936,
+      "available": true
+    },
+    "major_upset": {
+      "count": 70,
+      "percent_of_errors": 9.681881051175656,
+      "available": true
+    }
+  },
+  "mutually_exclusive_primary_categories": {
+    "ufc_debutant_or_very_low_experience": {
+      "count": 351,
+      "percent_of_errors": 48.54771784232365
+    },
+    "recent_decline": {
+      "count": 108,
+      "percent_of_errors": 14.937759336099585
+    },
+    "recent_improvement": {
+      "count": 53,
+      "percent_of_errors": 7.330567081604426
+    },
+    "fighter_moving_weight_classes": {
+      "count": 48,
+      "percent_of_errors": 6.639004149377594
+    },
+    "other": {
+      "count": 32,
+      "percent_of_errors": 4.426002766251729
+    },
+    "large_age_difference": {
+      "count": 26,
+      "percent_of_errors": 3.59612724757953
+    },
+    "long_layoff": {
+      "count": 25,
+      "percent_of_errors": 3.4578146611341634
+    },
+    "wrestler_vs_striker": {
+      "count": 23,
+      "percent_of_errors": 3.18118948824343
+    },
+    "close_50_50_fight": {
+      "count": 22,
+      "percent_of_errors": 3.0428769017980635
+    },
+    "large_reach_difference": {
+      "count": 17,
+      "percent_of_errors": 2.351313969571231
+    },
+    "power_puncher_vs_poor_defense": {
+      "count": 8,
+      "percent_of_errors": 1.1065006915629323
+    },
+    "major_upset": {
+      "count": 6,
+      "percent_of_errors": 0.8298755186721992
+    },
+    "grappler_vs_weak_submission_defense": {
+      "count": 3,
+      "percent_of_errors": 0.4149377593360996
+    },
+    "large_size_difference": {
+      "count": 1,
+      "percent_of_errors": 0.13831258644536654
+    }
+  },
+  "short_notice_note": "Unavailable in the supplied historical files.",
+  "thresholds": {
+    "large_age_gap_years": 8,
+    "large_reach_gap_inches": 6,
+    "large_size_gap_divisions": 2,
+    "long_layoff_days": 540,
+    "close_confidence": "<55%",
+    "major_upset_confidence": ">=70%"
+  }
+}

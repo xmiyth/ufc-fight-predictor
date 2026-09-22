@@ -1,0 +1,41 @@
+{
+  "retrieved_at": "2026-09-01T03:40:35.240488+00:00",
+  "source": {
+    "name": "UFC DataLab",
+    "upstream": "UFCStats-derived public data",
+    "fights_url": "https://raw.githubusercontent.com/komaksym/UFC-DataLab/main/data/stats/stats_raw.csv",
+    "fighters_url": "https://raw.githubusercontent.com/komaksym/UFC-DataLab/main/data/external_data/raw_fighter_details.csv"
+  },
+  "files": {
+    "fights.csv": {
+      "bytes": 4249642,
+      "sha256": "F2FEFA556E0FF05CF9E623FCB93BEB30A8F24419E14C081E16185F2EB2E7D093"
+    },
+    "fighters.csv": {
+      "bytes": 331950,
+      "sha256": "ABF221520B439317D7F81C3CE35B17FA3E9E399658BEE64C23FF3C7523D990C7"
+    },
+    "fighter_identities.csv": {
+      "bytes": 737238,
+      "sha256": "EA60F0E7455CC168D74415FA5A93D22D5216A3A0EF7B9CBCF1A67DA1242D802D"
+    }
+  },
+  "fight_rows": 8737,
+  "fighter_profile_rows": 3773,
+  "stable_fighter_ids": 4110,
+  "date_range": [
+    "1994-03-11",
+    "2026-06-27"
+  ],
+  "newest_completed_fight_date": "2026-06-27",
+  "newest_event_names": [
+    "UFC Fight Night: Fiziev vs. Torres"
+  ],
+  "missing_profile_fraction": {
+    "DOB": 0.19507023588656242,
+    "Height": 0.06944076331831434,
+    "Reach": 0.5043731778425656,
+    "Stance": 0.21176782401272198,
+    "Weight": 0.019613040021203287
+  }
+}

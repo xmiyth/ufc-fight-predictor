@@ -1,0 +1,876 @@
+{
+  "model_version": "Method V2.0",
+  "task": "Winning method conditional on the supplied/predicted winner",
+  "conditional_evaluation_warning": "Test features are oriented using the actual winner to measure method skill conditional on a correct winner. Website end-to-end reliability is lower when UFC Predictor V1.0 selects the wrong winner.",
+  "classes": [
+    "KO/TKO",
+    "Submission",
+    "Decision"
+  ],
+  "counts": {
+    "total": 8558,
+    "train": 6698,
+    "test": 1860,
+    "internal_fit": 5283,
+    "internal_validation": 1415
+  },
+  "date_ranges": {
+    "train_start": "1994-03-11",
+    "train_end": "2022-10-29",
+    "validation_cutoff": "2019-11-09",
+    "test_start": "2022-11-05",
+    "test_end": "2026-06-27"
+  },
+  "class_distribution_test": {
+    "Decision": 927,
+    "KO/TKO": 596,
+    "Submission": 337
+  },
+  "majority_baseline": {
+    "class": "Decision",
+    "accuracy": 0.49838709677419357
+  },
+  "model_results": [
+    {
+      "model": "Multinomial Logistic Regression",
+      "accuracy": 0.5349462365591398,
+      "macro_f1": 0.41998346010370646,
+      "multiclass_log_loss": 0.9554689368253962,
+      "multiclass_brier_score": 0.5732420632628883,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5010183299389002,
+          "recall": 0.412751677852349,
+          "f1": 0.45262189512419504
+        },
+        "Submission": {
+          "precision": 0.3695652173913043,
+          "recall": 0.10089020771513353,
+          "f1": 0.1585081585081585
+        },
+        "Decision": {
+          "precision": 0.5599060297572436,
+          "recall": 0.7713052858683926,
+          "f1": 0.6488203266787659
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            246,
+            26,
+            324
+          ],
+          [
+            65,
+            34,
+            238
+          ],
+          [
+            180,
+            32,
+            715
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.015583843408360512,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 112,
+            "mean_confidence": 0.3798507441154731,
+            "actual_accuracy": 0.39285714285714285,
+            "absolute_gap": 0.013006398741669756
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 595,
+            "mean_confidence": 0.454906353334903,
+            "actual_accuracy": 0.4436974789915966,
+            "absolute_gap": 0.011208874343306363
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 608,
+            "mean_confidence": 0.5481570587128208,
+            "actual_accuracy": 0.5213815789473685,
+            "absolute_gap": 0.02677547976545236
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 348,
+            "mean_confidence": 0.6436478836931884,
+            "actual_accuracy": 0.646551724137931,
+            "absolute_gap": 0.002903840444742678
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 171,
+            "mean_confidence": 0.740912522162723,
+            "actual_accuracy": 0.7309941520467836,
+            "absolute_gap": 0.009918370115939323
+          },
+          {
+            "range": "0.8-0.9",
+            "count": 25,
+            "mean_confidence": 0.8336918806285218,
+            "actual_accuracy": 0.76,
+            "absolute_gap": 0.07369188062852183
+          },
+          {
+            "range": "0.9-1.0",
+            "count": 1,
+            "mean_confidence": 0.9684146314879021,
+            "actual_accuracy": 1.0,
+            "absolute_gap": 0.03158536851209792
+          }
+        ]
+      }
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.5376344086021505,
+      "macro_f1": 0.39184003955388375,
+      "multiclass_log_loss": 0.9541961495040925,
+      "multiclass_brier_score": 0.5731504253934633,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5069767441860465,
+          "recall": 0.36577181208053694,
+          "f1": 0.4249512670565302
+        },
+        "Submission": {
+          "precision": 0.4146341463414634,
+          "recall": 0.050445103857566766,
+          "f1": 0.08994708994708994
+        },
+        "Decision": {
+          "precision": 0.550755939524838,
+          "recall": 0.8252427184466019,
+          "f1": 0.6606217616580311
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            218,
+            9,
+            369
+          ],
+          [
+            65,
+            17,
+            255
+          ],
+          [
+            147,
+            15,
+            765
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.028378223206276598,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 128,
+            "mean_confidence": 0.37783646129675863,
+            "actual_accuracy": 0.3046875,
+            "absolute_gap": 0.07314896129675863
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 702,
+            "mean_confidence": 0.4569771511955895,
+            "actual_accuracy": 0.4658119658119658,
+            "absolute_gap": 0.008834814616376307
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 688,
+            "mean_confidence": 0.5456579751425551,
+            "actual_accuracy": 0.5915697674418605,
+            "absolute_gap": 0.04591179229930542
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 311,
+            "mean_confidence": 0.6401151635544342,
+            "actual_accuracy": 0.6463022508038585,
+            "absolute_gap": 0.0061870872494242946
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 31,
+            "mean_confidence": 0.7191325477258029,
+            "actual_accuracy": 0.8387096774193549,
+            "absolute_gap": 0.11957712969355194
+          }
+        ]
+      }
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.5408602150537635,
+      "macro_f1": 0.4000881507725149,
+      "multiclass_log_loss": 0.9473158402913473,
+      "multiclass_brier_score": 0.5688105660569363,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5164835164835165,
+          "recall": 0.39429530201342283,
+          "f1": 0.44719314938154137
+        },
+        "Submission": {
+          "precision": 0.34615384615384615,
+          "recall": 0.05341246290801187,
+          "f1": 0.09254498714652956
+        },
+        "Decision": {
+          "precision": 0.5565410199556541,
+          "recall": 0.8122977346278317,
+          "f1": 0.6605263157894737
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            235,
+            15,
+            346
+          ],
+          [
+            65,
+            18,
+            254
+          ],
+          [
+            155,
+            19,
+            753
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.02044074266187604,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 126,
+            "mean_confidence": 0.37713921070098877,
+            "actual_accuracy": 0.3253968253968254,
+            "absolute_gap": 0.05174238530416336
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 657,
+            "mean_confidence": 0.45731449127197266,
+            "actual_accuracy": 0.4611872146118721,
+            "absolute_gap": 0.0038727233398994643
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 660,
+            "mean_confidence": 0.5453301668167114,
+            "actual_accuracy": 0.5712121212121212,
+            "absolute_gap": 0.025881954395409745
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 345,
+            "mean_confidence": 0.6400036811828613,
+            "actual_accuracy": 0.663768115942029,
+            "absolute_gap": 0.023764434759167674
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 72,
+            "mean_confidence": 0.726735532283783,
+            "actual_accuracy": 0.7777777777777778,
+            "absolute_gap": 0.05104224549399483
+          }
+        ]
+      }
+    }
+  ],
+  "selected_model": "Multinomial Logistic Regression",
+  "selected_test_metrics": {
+    "model": "Multinomial Logistic Regression",
+    "accuracy": 0.5349462365591398,
+    "macro_f1": 0.41998346010370646,
+    "multiclass_log_loss": 0.9554689368253962,
+    "multiclass_brier_score": 0.5732420632628883,
+    "per_class": {
+      "KO/TKO": {
+        "precision": 0.5010183299389002,
+        "recall": 0.412751677852349,
+        "f1": 0.45262189512419504
+      },
+      "Submission": {
+        "precision": 0.3695652173913043,
+        "recall": 0.10089020771513353,
+        "f1": 0.1585081585081585
+      },
+      "Decision": {
+        "precision": 0.5599060297572436,
+        "recall": 0.7713052858683926,
+        "f1": 0.6488203266787659
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "KO/TKO",
+        "Submission",
+        "Decision"
+      ],
+      "rows_actual_columns_predicted": [
+        [
+          246,
+          26,
+          324
+        ],
+        [
+          65,
+          34,
+          238
+        ],
+        [
+          180,
+          32,
+          715
+        ]
+      ]
+    },
+    "calibration": {
+      "top_label_ece": 0.015583843408360512,
+      "bins": [
+        {
+          "range": "0.3-0.4",
+          "count": 112,
+          "mean_confidence": 0.3798507441154731,
+          "actual_accuracy": 0.39285714285714285,
+          "absolute_gap": 0.013006398741669756
+        },
+        {
+          "range": "0.4-0.5",
+          "count": 595,
+          "mean_confidence": 0.454906353334903,
+          "actual_accuracy": 0.4436974789915966,
+          "absolute_gap": 0.011208874343306363
+        },
+        {
+          "range": "0.5-0.6",
+          "count": 608,
+          "mean_confidence": 0.5481570587128208,
+          "actual_accuracy": 0.5213815789473685,
+          "absolute_gap": 0.02677547976545236
+        },
+        {
+          "range": "0.6-0.7",
+          "count": 348,
+          "mean_confidence": 0.6436478836931884,
+          "actual_accuracy": 0.646551724137931,
+          "absolute_gap": 0.002903840444742678
+        },
+        {
+          "range": "0.7-0.8",
+          "count": 171,
+          "mean_confidence": 0.740912522162723,
+          "actual_accuracy": 0.7309941520467836,
+          "absolute_gap": 0.009918370115939323
+        },
+        {
+          "range": "0.8-0.9",
+          "count": 25,
+          "mean_confidence": 0.8336918806285218,
+          "actual_accuracy": 0.76,
+          "absolute_gap": 0.07369188062852183
+        },
+        {
+          "range": "0.9-1.0",
+          "count": 1,
+          "mean_confidence": 0.9684146314879021,
+          "actual_accuracy": 1.0,
+          "absolute_gap": 0.03158536851209792
+        }
+      ]
+    }
+  },
+  "lowest_log_loss_model": {
+    "model": "XGBoost",
+    "accuracy": 0.5408602150537635,
+    "macro_f1": 0.4000881507725149,
+    "multiclass_log_loss": 0.9473158402913473,
+    "multiclass_brier_score": 0.5688105660569363,
+    "per_class": {
+      "KO/TKO": {
+        "precision": 0.5164835164835165,
+        "recall": 0.39429530201342283,
+        "f1": 0.44719314938154137
+      },
+      "Submission": {
+        "precision": 0.34615384615384615,
+        "recall": 0.05341246290801187,
+        "f1": 0.09254498714652956
+      },
+      "Decision": {
+        "precision": 0.5565410199556541,
+        "recall": 0.8122977346278317,
+        "f1": 0.6605263157894737
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "KO/TKO",
+        "Submission",
+        "Decision"
+      ],
+      "rows_actual_columns_predicted": [
+        [
+          235,
+          15,
+          346
+        ],
+        [
+          65,
+          18,
+          254
+        ],
+        [
+          155,
+          19,
+          753
+        ]
+      ]
+    },
+    "calibration": {
+      "top_label_ece": 0.02044074266187604,
+      "bins": [
+        {
+          "range": "0.3-0.4",
+          "count": 126,
+          "mean_confidence": 0.37713921070098877,
+          "actual_accuracy": 0.3253968253968254,
+          "absolute_gap": 0.05174238530416336
+        },
+        {
+          "range": "0.4-0.5",
+          "count": 657,
+          "mean_confidence": 0.45731449127197266,
+          "actual_accuracy": 0.4611872146118721,
+          "absolute_gap": 0.0038727233398994643
+        },
+        {
+          "range": "0.5-0.6",
+          "count": 660,
+          "mean_confidence": 0.5453301668167114,
+          "actual_accuracy": 0.5712121212121212,
+          "absolute_gap": 0.025881954395409745
+        },
+        {
+          "range": "0.6-0.7",
+          "count": 345,
+          "mean_confidence": 0.6400036811828613,
+          "actual_accuracy": 0.663768115942029,
+          "absolute_gap": 0.023764434759167674
+        },
+        {
+          "range": "0.7-0.8",
+          "count": 72,
+          "mean_confidence": 0.726735532283783,
+          "actual_accuracy": 0.7777777777777778,
+          "absolute_gap": 0.05104224549399483
+        }
+      ]
+    }
+  },
+  "selection_rationale": "Regularized multinomial logistic regression is deployed despite XGBoost's narrow in-distribution log-loss advantage because it has higher macro F1, higher Submission recall, better calibration ECE, and continuous extrapolation for explicitly flagged out-of-distribution size gaps.",
+  "weight_feature_ablation": [
+    {
+      "feature_set": "A_style_no_weight",
+      "feature_count": 72,
+      "accuracy": 0.546236559139785,
+      "macro_f1": 0.42827440683427503,
+      "multiclass_log_loss": 0.952641184015274,
+      "multiclass_brier_score": 0.5720004150623224,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5219206680584552,
+          "recall": 0.41946308724832215,
+          "f1": 0.46511627906976744
+        },
+        "Submission": {
+          "precision": 0.4,
+          "recall": 0.10089020771513353,
+          "f1": 0.16113744075829384
+        },
+        "Decision": {
+          "precision": 0.5648148148148148,
+          "recall": 0.7896440129449838,
+          "f1": 0.6585695006747638
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            250,
+            20,
+            326
+          ],
+          [
+            65,
+            34,
+            238
+          ],
+          [
+            164,
+            31,
+            732
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.01696540094823822,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 137,
+            "mean_confidence": 0.3817608164818197,
+            "actual_accuracy": 0.36496350364963503,
+            "absolute_gap": 0.016797312832184663
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 631,
+            "mean_confidence": 0.4566841370662647,
+            "actual_accuracy": 0.4722662440570523,
+            "absolute_gap": 0.015582106990787603
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 644,
+            "mean_confidence": 0.5464163998603607,
+            "actual_accuracy": 0.5667701863354038,
+            "absolute_gap": 0.020353786475043045
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 356,
+            "mean_confidence": 0.6430077084091245,
+            "actual_accuracy": 0.6544943820224719,
+            "absolute_gap": 0.011486673613347431
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 87,
+            "mean_confidence": 0.7345494249109773,
+            "actual_accuracy": 0.7586206896551724,
+            "absolute_gap": 0.024071264744195076
+          },
+          {
+            "range": "0.8-0.9",
+            "count": 5,
+            "mean_confidence": 0.8261620131004864,
+            "actual_accuracy": 0.8,
+            "absolute_gap": 0.02616201310048638
+          }
+        ]
+      }
+    },
+    {
+      "feature_set": "B_style_weight",
+      "feature_count": 116,
+      "accuracy": 0.5349462365591398,
+      "macro_f1": 0.4133136915684042,
+      "multiclass_log_loss": 0.9537856556414189,
+      "multiclass_brier_score": 0.5724475990479411,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5021097046413502,
+          "recall": 0.39932885906040266,
+          "f1": 0.44485981308411215
+        },
+        "Submission": {
+          "precision": 0.379746835443038,
+          "recall": 0.08902077151335312,
+          "f1": 0.14423076923076922
+        },
+        "Decision": {
+          "precision": 0.5562356541698547,
+          "recall": 0.7842502696871629,
+          "f1": 0.6508504923903312
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            238,
+            20,
+            338
+          ],
+          [
+            65,
+            30,
+            242
+          ],
+          [
+            171,
+            29,
+            727
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.015959989395877398,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 108,
+            "mean_confidence": 0.37957483466021175,
+            "actual_accuracy": 0.3333333333333333,
+            "absolute_gap": 0.04624150132687843
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 592,
+            "mean_confidence": 0.4573668582948698,
+            "actual_accuracy": 0.4577702702702703,
+            "absolute_gap": 0.0004034119754005028
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 596,
+            "mean_confidence": 0.5488995568241102,
+            "actual_accuracy": 0.5318791946308725,
+            "absolute_gap": 0.01702036219323766
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 366,
+            "mean_confidence": 0.6443037629542151,
+            "actual_accuracy": 0.6202185792349727,
+            "absolute_gap": 0.024085183719242398
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 169,
+            "mean_confidence": 0.7416240978723617,
+            "actual_accuracy": 0.7100591715976331,
+            "absolute_gap": 0.03156492627472862
+          },
+          {
+            "range": "0.8-0.9",
+            "count": 28,
+            "mean_confidence": 0.824176979475763,
+            "actual_accuracy": 0.8214285714285714,
+            "absolute_gap": 0.002748408047191564
+          },
+          {
+            "range": "0.9-1.0",
+            "count": 1,
+            "mean_confidence": 0.9180628305708703,
+            "actual_accuracy": 1.0,
+            "absolute_gap": 0.08193716942912965
+          }
+        ]
+      }
+    },
+    {
+      "feature_set": "C_style_weight_physical_interactions",
+      "feature_count": 129,
+      "accuracy": 0.5349462365591398,
+      "macro_f1": 0.41998346010370646,
+      "multiclass_log_loss": 0.9554689368253962,
+      "multiclass_brier_score": 0.5732420632628883,
+      "per_class": {
+        "KO/TKO": {
+          "precision": 0.5010183299389002,
+          "recall": 0.412751677852349,
+          "f1": 0.45262189512419504
+        },
+        "Submission": {
+          "precision": 0.3695652173913043,
+          "recall": 0.10089020771513353,
+          "f1": 0.1585081585081585
+        },
+        "Decision": {
+          "precision": 0.5599060297572436,
+          "recall": 0.7713052858683926,
+          "f1": 0.6488203266787659
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "KO/TKO",
+          "Submission",
+          "Decision"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            246,
+            26,
+            324
+          ],
+          [
+            65,
+            34,
+            238
+          ],
+          [
+            180,
+            32,
+            715
+          ]
+        ]
+      },
+      "calibration": {
+        "top_label_ece": 0.015583843408360512,
+        "bins": [
+          {
+            "range": "0.3-0.4",
+            "count": 112,
+            "mean_confidence": 0.3798507441154731,
+            "actual_accuracy": 0.39285714285714285,
+            "absolute_gap": 0.013006398741669756
+          },
+          {
+            "range": "0.4-0.5",
+            "count": 595,
+            "mean_confidence": 0.454906353334903,
+            "actual_accuracy": 0.4436974789915966,
+            "absolute_gap": 0.011208874343306363
+          },
+          {
+            "range": "0.5-0.6",
+            "count": 608,
+            "mean_confidence": 0.5481570587128208,
+            "actual_accuracy": 0.5213815789473685,
+            "absolute_gap": 0.02677547976545236
+          },
+          {
+            "range": "0.6-0.7",
+            "count": 348,
+            "mean_confidence": 0.6436478836931884,
+            "actual_accuracy": 0.646551724137931,
+            "absolute_gap": 0.002903840444742678
+          },
+          {
+            "range": "0.7-0.8",
+            "count": 171,
+            "mean_confidence": 0.740912522162723,
+            "actual_accuracy": 0.7309941520467836,
+            "absolute_gap": 0.009918370115939323
+          },
+          {
+            "range": "0.8-0.9",
+            "count": 25,
+            "mean_confidence": 0.8336918806285218,
+            "actual_accuracy": 0.76,
+            "absolute_gap": 0.07369188062852183
+          },
+          {
+            "range": "0.9-1.0",
+            "count": 1,
+            "mean_confidence": 0.9684146314879021,
+            "actual_accuracy": 1.0,
+            "absolute_gap": 0.03158536851209792
+          }
+        ]
+      }
+    }
+  ],
+  "validation_trials": {
+    "Multinomial Logistic Regression": [
+      {
+        "candidate": 0,
+        "log_loss": 0.9963808731022563,
+        "accuracy": 0.508833922261484
+      },
+      {
+        "candidate": 1,
+        "log_loss": 0.9998257209552848,
+        "accuracy": 0.5095406360424029
+      },
+      {
+        "candidate": 2,
+        "log_loss": 1.038367551615902,
+        "accuracy": 0.472791519434629
+      }
+    ],
+    "Gradient Boosting": [
+      {
+        "candidate": 0,
+        "log_loss": 0.9705727865777143,
+        "accuracy": 0.5173144876325089
+      },
+      {
+        "candidate": 1,
+        "log_loss": 0.9619175800241904,
+        "accuracy": 0.5095406360424029
+      }
+    ],
+    "XGBoost": [
+      {
+        "candidate": 0,
+        "log_loss": 0.9584973536811352,
+        "accuracy": 0.5102473498233215
+      },
+      {
+        "candidate": 1,
+        "log_loss": 0.9598193626474673,
+        "accuracy": 0.5095406360424029
+      }
+    ]
+  },
+  "leakage_audit": {
+    "status": "PASS",
+    "chronological_train_before_test": true,
+    "features_snapshotted_before_current_fight_update": true,
+    "current_fight_method_used_as_feature": false,
+    "feature_count": 129,
+    "historical_division_is_previous_fight_only": true,
+    "debut_division_fallback_is_current_booked_division": true,
+    "static_profile_weight_used": false
+  },
+  "probability_calibration": {
+    "used": false,
+    "reason": "Uncalibrated selected model had acceptable held-out top-label ECE; no calibration transform improved model selection evidence."
+  },
+  "mismatch_training_distribution": {
+    "0.0": 7337,
+    "1.0": 1032,
+    "2.0": 53,
+    "3.0": 3,
+    "4.0": 1,
+    "5.0": 7,
+    "nan": 125
+  },
+  "deployment_artifact_sha256": "1877349434ED89329B3DDD8B8644085E1E5DEDAA2F9E492CF6B7072647CF8D3C"
+}

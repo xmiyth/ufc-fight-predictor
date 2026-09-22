@@ -1,0 +1,775 @@
+{
+  "fetched_epoch": 1790088193.3405564,
+  "fetched_at": "2026-09-22T14:43:13.340556+00:00",
+  "events": [
+    {
+      "event_id": "espn-600061266",
+      "event_name": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+      "event_date": "2026-09-26",
+      "location": "Meta APEX, Las Vegas, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401911630-c19186175dfd5b35",
+          "fighter_a": "Raul Rosas Jr.",
+          "fighter_b": "Raoni Barcelos",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5088844",
+          "fighter_b_espn_id": "3075570"
+        },
+        {
+          "fight_id": "espn-401911631-92b09de377b20f14",
+          "fighter_a": "Rodolfo Vieira",
+          "fighter_b": "Robert Bryczek",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4426250",
+          "fighter_b_espn_id": "4341572"
+        },
+        {
+          "fight_id": "espn-401914468-ed56fbfc8f48f1c9",
+          "fighter_a": "Brady Hiestand",
+          "fighter_b": "Rinya Nakamura",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4815974",
+          "fighter_b_espn_id": "5068624"
+        },
+        {
+          "fight_id": "espn-401914467-f17f6dac3cf83a7e",
+          "fighter_a": "Rodolfo Bellato",
+          "fighter_b": "Christian Edwards",
+          "weight_class": "Light Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 4,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5060489",
+          "fighter_b_espn_id": "4799517"
+        },
+        {
+          "fight_id": "espn-401914470-1c7ed90c374fb96e",
+          "fighter_a": "Elves Brener",
+          "fighter_b": "Josiah Harrell",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 5,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5110006",
+          "fighter_b_espn_id": "5149546"
+        },
+        {
+          "fight_id": "espn-401914466-85984cb3088d876d",
+          "fighter_a": "Montel Jackson",
+          "fighter_b": "Ricky Simon",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 6,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4339130",
+          "fighter_b_espn_id": "3922491"
+        },
+        {
+          "fight_id": "espn-401914471-f657e6a08a88d648",
+          "fighter_a": "Norma Dumont",
+          "fighter_b": "Ailin Perez",
+          "weight_class": "Women's Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 7,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4418784",
+          "fighter_b_espn_id": "5075333"
+        },
+        {
+          "fight_id": "espn-401914469-63bf7ef4620e13c7",
+          "fighter_a": "John Castaneda",
+          "fighter_b": "Alatengheili",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 8,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4063869",
+          "fighter_b_espn_id": "3154389"
+        },
+        {
+          "fight_id": "espn-401923433-100be0043a5a7b8c",
+          "fighter_a": "Mickey Gall",
+          "fighter_b": "Sedriques Dumas",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3960470",
+          "fighter_b_espn_id": "5060467"
+        },
+        {
+          "fight_id": "espn-401914472-19d3e13161e6238d",
+          "fighter_a": "Vanessa Demopoulos",
+          "fighter_b": "Yazmin Jauregui",
+          "weight_class": "Women's Strawweight",
+          "number_of_rounds": 3,
+          "bout_order": 10,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4683395",
+          "fighter_b_espn_id": "5063403"
+        }
+      ],
+      "starts_at": "2026-09-26T21:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061266"
+    },
+    {
+      "event_id": "espn-600061182",
+      "event_name": "UFC 332: Silva vs. Wang",
+      "event_date": "2026-10-03",
+      "location": "Delta Center, Salt Lake City, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401912278-50ec5435786533a6",
+          "fighter_a": "Natalia Silva",
+          "fighter_b": "Wang Cong",
+          "weight_class": "Women's Flyweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4054605",
+          "fighter_b_espn_id": "4215200"
+        },
+        {
+          "fight_id": "espn-401907087-270f8c74bfd2c08c",
+          "fighter_a": "Deiveson Figueiredo",
+          "fighter_b": "Payton Talbott",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4189320",
+          "fighter_b_espn_id": "5144008"
+        },
+        {
+          "fight_id": "espn-401917347-b296917a96fc9b08",
+          "fighter_a": "King Green",
+          "fighter_b": "Esteban Ribovics",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2502364",
+          "fighter_b_espn_id": "5074131"
+        },
+        {
+          "fight_id": "espn-401917345-bb7bb22f5f9ffa52",
+          "fighter_a": "Khaos Williams",
+          "fighter_b": "Roberto Soldi\u0107",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 3,
+          "bout_order": 4,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4612580",
+          "fighter_b_espn_id": "4274796"
+        },
+        {
+          "fight_id": "espn-401907088-7b183ac046e9b218",
+          "fighter_a": "Ateba Gautier",
+          "fighter_b": "Roman Kopylov",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 5,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5218421",
+          "fighter_b_espn_id": "4300149"
+        },
+        {
+          "fight_id": "espn-401912276-7e93d3fbeec744f6",
+          "fighter_a": "Imanol Rodriguez",
+          "fighter_b": "Alden Coria",
+          "weight_class": "Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 6,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5289578",
+          "fighter_b_espn_id": "5099732"
+        },
+        {
+          "fight_id": "espn-401912277-2607319f7e258fec",
+          "fighter_a": "Damian Pinas",
+          "fighter_b": "Andrey Pulyaev",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 7,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5292022",
+          "fighter_b_espn_id": "5211225"
+        },
+        {
+          "fight_id": "espn-401917348-194418d768f386e7",
+          "fighter_a": "Marcus McGhee",
+          "fighter_b": "Bernardo Sopaj",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 8,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4895760",
+          "fighter_b_espn_id": "5080883"
+        },
+        {
+          "fight_id": "espn-401912274-95c22ec8dcc6c30e",
+          "fighter_a": "Johnny Walker",
+          "fighter_b": "Mick Parkin",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3146944",
+          "fighter_b_espn_id": "5060505"
+        },
+        {
+          "fight_id": "espn-401917346-df0326079c376407",
+          "fighter_a": "Rafael Dos Anjos",
+          "fighter_b": "Alexander Hernandez",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 10,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2335687",
+          "fighter_b_espn_id": "4018757"
+        },
+        {
+          "fight_id": "espn-401912275-7ae56fc208410942",
+          "fighter_a": "Marvin Vettori",
+          "fighter_b": "Ismail Naurdiev",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 11,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4001851",
+          "fighter_b_espn_id": "4412813"
+        },
+        {
+          "fight_id": "espn-401907089-25fd24efe35f6a5d",
+          "fighter_a": "Court McGee",
+          "fighter_b": "Eric Nolan",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 3,
+          "bout_order": 12,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2504639",
+          "fighter_b_espn_id": "5290958"
+        },
+        {
+          "fight_id": "espn-401922306-43f2eab9e9f7a300",
+          "fighter_a": "Anthony Wint",
+          "fighter_b": "Lucas Armand",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 13,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3128853",
+          "fighter_b_espn_id": "5450121"
+        }
+      ],
+      "starts_at": "2026-10-03T20:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061182"
+    },
+    {
+      "event_id": "espn-600061541",
+      "event_name": "UFC Fight Night: Allen vs. Duncan",
+      "event_date": "2026-10-10",
+      "location": "Meta APEX, Las Vegas, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401916276-eedd348cbe96427f",
+          "fighter_a": "Brendan Allen",
+          "fighter_b": "Christian Leroy Duncan",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4025699",
+          "fighter_b_espn_id": "4848674"
+        }
+      ],
+      "starts_at": "2026-10-10T21:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061541"
+    },
+    {
+      "event_id": "espn-600060773",
+      "event_name": "UFC Fight Night: Buckley vs. Malott",
+      "event_date": "2026-10-17",
+      "location": "Rogers Place, Edmonton, Canada",
+      "fights": [
+        {
+          "fight_id": "espn-401897388-3463fc4a0e783808",
+          "fighter_a": "Joaquin Buckley",
+          "fighter_b": "Mike Malott",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4024714",
+          "fighter_b_espn_id": "3165120"
+        },
+        {
+          "fight_id": "espn-401897729-71bf12436954d7d9",
+          "fighter_a": "Erin Blanchfield",
+          "fighter_b": "Jasmine Jasudavicius",
+          "weight_class": "Women's Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4350796",
+          "fighter_b_espn_id": "4835135"
+        },
+        {
+          "fight_id": "espn-401908372-a10cd9d91b27c906",
+          "fighter_a": "Marc-Andre Barriault",
+          "fighter_b": "Kyle Daukaus",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4415883",
+          "fighter_b_espn_id": "4329444"
+        },
+        {
+          "fight_id": "espn-401909783-afdcfe4e4a76dedb",
+          "fighter_a": "Louis Jourdain",
+          "fighter_b": "Timmy Cuamba",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 4,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4877916",
+          "fighter_b_espn_id": "5123311"
+        },
+        {
+          "fight_id": "espn-401905374-c179caaeceacae52",
+          "fighter_a": "Mandel Nallo",
+          "fighter_b": "Nate Landwehr",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 5,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4063786",
+          "fighter_b_espn_id": "3821549"
+        },
+        {
+          "fight_id": "espn-401908371-fcdb58c2adf283a1",
+          "fighter_a": "Tanner Boser",
+          "fighter_b": "Jhonata Diniz",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 6,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4232775",
+          "fighter_b_espn_id": "5145497"
+        },
+        {
+          "fight_id": "espn-401911807-5a48fea64658a734",
+          "fighter_a": "Julien LeBlanc",
+          "fighter_b": "Gilbert Urbina",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 7,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4807973",
+          "fighter_b_espn_id": "4375574"
+        },
+        {
+          "fight_id": "espn-401916451-43306b3929c50d5b",
+          "fighter_a": "Javad Mahjoub",
+          "fighter_b": "Louie Sutherland",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 8,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5405986",
+          "fighter_b_espn_id": "5080572"
+        },
+        {
+          "fight_id": "espn-401908374-de39b465c9dbed2f",
+          "fighter_a": "Jamey-Lyn Horth",
+          "fighter_b": "Katlyn Cerminara",
+          "weight_class": "Women's Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4689227",
+          "fighter_b_espn_id": "4026490"
+        },
+        {
+          "fight_id": "espn-401914039-479bfd836e660610",
+          "fighter_a": "Chad Anheliger",
+          "fighter_b": "Steven Koslow",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 10,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4816062",
+          "fighter_b_espn_id": "5119740"
+        },
+        {
+          "fight_id": "espn-401908373-ae0a2a510ab37483",
+          "fighter_a": "Melissa Croden",
+          "fighter_b": "Chelsea Chandler",
+          "weight_class": "Women's Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 11,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4947922",
+          "fighter_b_espn_id": "4319785"
+        },
+        {
+          "fight_id": "espn-401919643-7a3b4616f1733ace",
+          "fighter_a": "Cody Chovancek",
+          "fighter_b": "SuYoung You",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 12,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5282412",
+          "fighter_b_espn_id": "5044361"
+        }
+      ],
+      "starts_at": "2026-10-17T21:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600060773"
+    },
+    {
+      "event_id": "espn-600061267",
+      "event_name": "UFC 333: Volkanovski vs. Evloev",
+      "event_date": "2026-10-24",
+      "location": "Etihad Arena, Abu Dhabi, United Arab Emirates",
+      "fights": [
+        {
+          "fight_id": "espn-401911632-5f194560825c92b7",
+          "fighter_a": "Alexander Volkanovski",
+          "fighter_b": "Movsar Evloev",
+          "weight_class": "Featherweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3949584",
+          "fighter_b_espn_id": "4029275"
+        },
+        {
+          "fight_id": "espn-401911633-e284062bef67be29",
+          "fighter_a": "Petr Yan",
+          "fighter_b": "Merab Dvalishvili",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 5,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4293517",
+          "fighter_b_espn_id": "3948572"
+        },
+        {
+          "fight_id": "espn-401911634-b57a4bd7d0fdcede",
+          "fighter_a": "Lone'er Kavanagh",
+          "fighter_b": "Ramazan Temirov",
+          "weight_class": "Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5147737",
+          "fighter_b_espn_id": "4895691"
+        },
+        {
+          "fight_id": "espn-401911636-9a05406f2d4d4690",
+          "fighter_a": "Aaron Pico",
+          "fighter_b": "Losene Keita",
+          "weight_class": "Featherweight",
+          "number_of_rounds": 3,
+          "bout_order": 4,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4199009",
+          "fighter_b_espn_id": "5192314"
+        },
+        {
+          "fight_id": "espn-401911635-168b6e82ddea7e88",
+          "fighter_a": "Alexander Volkov",
+          "fighter_b": "Rizvan Kuniev",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 5,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2993650",
+          "fighter_b_espn_id": "4001837"
+        },
+        {
+          "fight_id": "espn-401911637-e735cdb587d24245",
+          "fighter_a": "Dominick Reyes",
+          "fighter_b": "Azamat Murzakanov",
+          "weight_class": "Light Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 6,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4233039",
+          "fighter_b_espn_id": "4227265"
+        },
+        {
+          "fight_id": "espn-401911638-67951730fcd6bd12",
+          "fighter_a": "Abus Magomedov",
+          "fighter_b": "Cam Rowston",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 7,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3077822",
+          "fighter_b_espn_id": "4694832"
+        },
+        {
+          "fight_id": "espn-401911639-8210fdd7677ba91a",
+          "fighter_a": "Nikita Krylov",
+          "fighter_b": "Abdul-Rakhman Yakhyaev",
+          "weight_class": "Light Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 8,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3026263",
+          "fighter_b_espn_id": "5291025"
+        },
+        {
+          "fight_id": "espn-401911640-5d759ef918124bef",
+          "fighter_a": "Grant Dawson",
+          "fighter_b": "Nurullo Aliev",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3931156",
+          "fighter_b_espn_id": "5092398"
+        }
+      ],
+      "starts_at": "2026-10-24T14:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061267"
+    },
+    {
+      "event_id": "espn-600061420",
+      "event_name": "UFC Fight Night: Moicano vs. Nolan",
+      "event_date": "2026-10-31",
+      "location": "Meta APEX, Las Vegas, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401921310-c028474af1dd26cd",
+          "fighter_a": "Renato Moicano",
+          "fighter_b": "Tom Nolan",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3028863",
+          "fighter_b_espn_id": "5144007"
+        },
+        {
+          "fight_id": "espn-401914105-2c9ccdd4c4434066",
+          "fighter_a": "Lucia Szabova",
+          "fighter_b": "Tainara Lisboa",
+          "weight_class": "Women's Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5130185",
+          "fighter_b_espn_id": "4418809"
+        },
+        {
+          "fight_id": "espn-401914106-b5215975c92e99e6",
+          "fighter_a": "Nick Klein",
+          "fighter_b": "Joe Kropschot",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5134399",
+          "fighter_b_espn_id": "4687604"
+        }
+      ],
+      "starts_at": "2026-10-31T21:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061420"
+    },
+    {
+      "event_id": "espn-600061268",
+      "event_name": "UFC Fight Night: Bonfim vs. Brady",
+      "event_date": "2026-11-07",
+      "location": "Meta APEX, Las Vegas, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401911641-e8d579dc7cf8d379",
+          "fighter_a": "Gabriel Bonfim",
+          "fighter_b": "Sean Brady",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4921516",
+          "fighter_b_espn_id": "4295192"
+        }
+      ],
+      "starts_at": "2026-11-07T22:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061268"
+    },
+    {
+      "event_id": "espn-600061400",
+      "event_name": "UFC 334: Gane vs. Hokit",
+      "event_date": "2026-11-14",
+      "location": "Madison Square Garden, New York, USA",
+      "fights": [
+        {
+          "fight_id": "espn-401913646-6f3c4c516b3fba26",
+          "fighter_a": "Ciryl Gane",
+          "fighter_b": "Josh Hokit",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 5,
+          "bout_order": 1,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4426000",
+          "fighter_b_espn_id": "4049391"
+        },
+        {
+          "fight_id": "espn-401922638-66d11d56758bcd78",
+          "fighter_a": "Kayla Harrison",
+          "fighter_b": "Amanda Nunes",
+          "weight_class": "Women's Bantamweight",
+          "number_of_rounds": 5,
+          "bout_order": 2,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4332765",
+          "fighter_b_espn_id": "2516131"
+        },
+        {
+          "fight_id": "espn-401922639-5d756ddc1fc559b7",
+          "fighter_a": "Caio Borralho",
+          "fighter_b": "Yousri Belgaroui",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 3,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4835137",
+          "fighter_b_espn_id": "5149815"
+        },
+        {
+          "fight_id": "espn-401922640-df9742bc09601dde",
+          "fighter_a": "Uro\u0161 Medi\u0107",
+          "fighter_b": "Kevin Holland",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 3,
+          "bout_order": 4,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "4685870",
+          "fighter_b_espn_id": "3943695"
+        },
+        {
+          "fight_id": "espn-401922641-68709da9f997bffa",
+          "fighter_a": "Bilal Hasan",
+          "fighter_b": "Luis Gurule",
+          "weight_class": "Flyweight",
+          "number_of_rounds": 3,
+          "bout_order": 5,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5264405",
+          "fighter_b_espn_id": "5218137"
+        },
+        {
+          "fight_id": "espn-401913647-f82688f4d57cae0a",
+          "fighter_a": "Stephen Thompson",
+          "fighter_b": "Charles Radtke",
+          "weight_class": "Welterweight",
+          "number_of_rounds": 3,
+          "bout_order": 6,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2615077",
+          "fighter_b_espn_id": "4416297"
+        },
+        {
+          "fight_id": "espn-401922642-482114ccf18b9714",
+          "fighter_a": "Drew Dober",
+          "fighter_b": "Chris Duncan",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 7,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2951202",
+          "fighter_b_espn_id": "4867356"
+        },
+        {
+          "fight_id": "espn-401922643-cb834b618e60393e",
+          "fighter_a": "Jim Miller",
+          "fighter_b": "Terrance McKinney",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 8,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2335718",
+          "fighter_b_espn_id": "4425604"
+        },
+        {
+          "fight_id": "espn-401922644-3c780f918406dab7",
+          "fighter_a": "Donte Johnson",
+          "fighter_b": "Baisangur Susurkaev",
+          "weight_class": "Middleweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5302831",
+          "fighter_b_espn_id": "5296753"
+        },
+        {
+          "fight_id": "espn-401922645-1622d0fbf50f5e1a",
+          "fighter_a": "Bia Mesquita",
+          "fighter_b": "Macy Chiasson",
+          "weight_class": "Women's Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 10,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5310274",
+          "fighter_b_espn_id": "4334306"
+        },
+        {
+          "fight_id": "espn-401922646-ecbb6559219db14e",
+          "fighter_a": "Adrian Ya\u00f1ez",
+          "fighter_b": "Juan Diaz",
+          "weight_class": "Bantamweight",
+          "number_of_rounds": 3,
+          "bout_order": 11,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "3998248",
+          "fighter_b_espn_id": "5310574"
+        },
+        {
+          "fight_id": "espn-401913648-978b5f7bbf5d176f",
+          "fighter_a": "Nazim Sadykhov",
+          "fighter_b": "Jefferson Nascimento",
+          "weight_class": "Lightweight",
+          "number_of_rounds": 3,
+          "bout_order": 12,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "5074130",
+          "fighter_b_espn_id": "5362725"
+        }
+      ],
+      "starts_at": "2026-11-14T22:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061400"
+    },
+    {
+      "event_id": "espn-600061665",
+      "event_name": "UFC Fight Night: Qatar",
+      "event_date": "2026-11-21",
+      "location": null,
+      "fights": [],
+      "starts_at": "2026-11-21T14:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061665"
+    },
+    {
+      "event_id": "espn-600061401",
+      "event_name": "UFC 335",
+      "event_date": "2026-12-12",
+      "location": "T-Mobile Arena, Las Vegas, USA",
+      "fights": [],
+      "starts_at": "2026-12-12T22:00:00+00:00",
+      "source_url": "https://www.espn.com/mma/fightcenter/_/id/600061401"
+    }
+  ]
+}

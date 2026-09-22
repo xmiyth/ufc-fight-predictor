@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ufc-predictor
+Version: 0.1.0
+Summary: Leakage-safe UFC fight winner prediction baseline
+Requires-Python: >=3.11
+Requires-Dist: pandas==2.3.2
+Requires-Dist: scikit-learn==1.7.1
+Requires-Dist: joblib==1.5.2
+Requires-Dist: xgboost==3.4.1
+Requires-Dist: fastapi==0.141.1
+Requires-Dist: uvicorn==0.52.4

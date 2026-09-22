@@ -1,0 +1,56 @@
+[
+  {
+    "year": 2019,
+    "train_fights": 4825,
+    "test_fights": 505,
+    "accuracy": 0.5841584158415841,
+    "multiclass_log_loss": 0.9422525916067974,
+    "multiclass_brier": 0.5626920564157746,
+    "ece": 0.060717162519398314
+  },
+  {
+    "year": 2020,
+    "train_fights": 5330,
+    "test_fights": 442,
+    "accuracy": 0.5158371040723982,
+    "multiclass_log_loss": 0.9889008021537314,
+    "multiclass_brier": 0.5951885105156905,
+    "ece": 0.025666896911228393
+  },
+  {
+    "year": 2021,
+    "train_fights": 5772,
+    "test_fights": 495,
+    "accuracy": 0.5232323232323233,
+    "multiclass_log_loss": 0.9795207625783862,
+    "multiclass_brier": 0.5937932138557701,
+    "ece": 0.03328281075063379
+  },
+  {
+    "year": 2022,
+    "train_fights": 6267,
+    "test_fights": 505,
+    "accuracy": 0.499009900990099,
+    "multiclass_log_loss": 1.0059739085754278,
+    "multiclass_brier": 0.6050177380153621,
+    "ece": 0.07369522269409483
+  },
+  {
+    "year": 2023,
+    "train_fights": 6772,
+    "test_fights": 503,
+    "accuracy": 0.48111332007952284,
+    "multiclass_log_loss": 1.019818875419372,
+    "multiclass_brier": 0.6125887616933878,
+    "ece": 0.03709672388452185
+  },
+  {
+    "year": 2024,
+    "train_fights": 7275,
+    "test_fights": 511,
+    "accuracy": 0.5694716242661448,
+    "multiclass_log_loss": 0.9322191431762494,
+    "multiclass_brier": 0.5534846330565347,
+    "ece": 0.057874444587823225
+  }
+]
