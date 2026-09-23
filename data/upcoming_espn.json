@@ -1,6 +1,6 @@
 {
-  "fetched_epoch": 1790088193.3405564,
-  "fetched_at": "2026-09-22T14:43:13.340556+00:00",
+  "fetched_epoch": 1790138394.102431,
+  "fetched_at": "2026-09-23T04:39:54.102431+00:00",
   "events": [
     {
       "event_id": "espn-600061266",
@@ -478,26 +478,15 @@
           "fighter_b_espn_id": "4895691"
         },
         {
-          "fight_id": "espn-401911636-9a05406f2d4d4690",
-          "fighter_a": "Aaron Pico",
-          "fighter_b": "Losene Keita",
+          "fight_id": "espn-401911636-20914e3e84b7706f",
+          "fighter_a": "Arnold Allen",
+          "fighter_b": "Aaron Pico",
           "weight_class": "Featherweight",
           "number_of_rounds": 3,
           "bout_order": 4,
           "card_section": "Scheduled bout",
-          "fighter_a_espn_id": "4199009",
-          "fighter_b_espn_id": "5192314"
-        },
-        {
-          "fight_id": "espn-401911635-168b6e82ddea7e88",
-          "fighter_a": "Alexander Volkov",
-          "fighter_b": "Rizvan Kuniev",
-          "weight_class": "Heavyweight",
-          "number_of_rounds": 3,
-          "bout_order": 5,
-          "card_section": "Scheduled bout",
-          "fighter_a_espn_id": "2993650",
-          "fighter_b_espn_id": "4001837"
+          "fighter_a_espn_id": "3902098",
+          "fighter_b_espn_id": "4199009"
         },
         {
           "fight_id": "espn-401911637-e735cdb587d24245",
@@ -505,7 +494,7 @@
           "fighter_b": "Azamat Murzakanov",
           "weight_class": "Light Heavyweight",
           "number_of_rounds": 3,
-          "bout_order": 6,
+          "bout_order": 5,
           "card_section": "Scheduled bout",
           "fighter_a_espn_id": "4233039",
           "fighter_b_espn_id": "4227265"
@@ -516,7 +505,7 @@
           "fighter_b": "Cam Rowston",
           "weight_class": "Middleweight",
           "number_of_rounds": 3,
-          "bout_order": 7,
+          "bout_order": 6,
           "card_section": "Scheduled bout",
           "fighter_a_espn_id": "3077822",
           "fighter_b_espn_id": "4694832"
@@ -527,7 +516,7 @@
           "fighter_b": "Abdul-Rakhman Yakhyaev",
           "weight_class": "Light Heavyweight",
           "number_of_rounds": 3,
-          "bout_order": 8,
+          "bout_order": 7,
           "card_section": "Scheduled bout",
           "fighter_a_espn_id": "3026263",
           "fighter_b_espn_id": "5291025"
@@ -538,10 +527,21 @@
           "fighter_b": "Nurullo Aliev",
           "weight_class": "Lightweight",
           "number_of_rounds": 3,
-          "bout_order": 9,
+          "bout_order": 8,
           "card_section": "Scheduled bout",
           "fighter_a_espn_id": "3931156",
           "fighter_b_espn_id": "5092398"
+        },
+        {
+          "fight_id": "espn-401911635-168b6e82ddea7e88",
+          "fighter_a": "Alexander Volkov",
+          "fighter_b": "Rizvan Kuniev",
+          "weight_class": "Heavyweight",
+          "number_of_rounds": 3,
+          "bout_order": 9,
+          "card_section": "Scheduled bout",
+          "fighter_a_espn_id": "2993650",
+          "fighter_b_espn_id": "4001837"
         }
       ],
       "starts_at": "2026-10-24T14:00:00+00:00",

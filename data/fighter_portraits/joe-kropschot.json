@@ -1,1 +1,7 @@
-{"name": "Joe Kropschot", "unavailable": true}
+{
+  "name": "Joe Kropschot",
+  "source": "UFC",
+  "source_url": "https://www.ufc.com/athlete/joseph-kropschot",
+  "image_url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/KROPSCHOT_JOE_R_08-11.png?itok=3FsiQXS0",
+  "fetched_at": "2026-09-23T02:54:27.017384+00:00"
+}

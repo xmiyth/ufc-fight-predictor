@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / 'data' / 'fighter_portraits'
 _locks = {}
 _guard = Lock()
+# Verified UFC profile spelling; presentation only, not a model identity alias.
+PROFILE_NAMES = {'joe kropschot': 'Joseph Kropschot'}
 
 
 class PortraitParser(HTMLParser):
@@ -51,10 +53,12 @@ def portrait(name, espn_id=None):
             return target
         if metadata.exists() and time.time() - metadata.stat().st_mtime < 86400:
             return None
-        profile = f'https://www.ufc.com/athlete/{slug}'
+        profile_name = PROFILE_NAMES.get(canonical_fighter_name(name), name)
+        profile_slug = canonical_fighter_name(profile_name).replace(' ', '-')
+        profile = f'https://www.ufc.com/athlete/{profile_slug}'
         candidates = []
         try:
-            parser = PortraitParser(name)
+            parser = PortraitParser(profile_name)
             parser.feed(_fetch(profile).decode('utf-8'))
             if parser.image:
                 url = urlparse(parser.image)

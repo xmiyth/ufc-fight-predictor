@@ -21315,6 +21315,366 @@
         "model_sha256": "5C0725ED3BEC1FF9B82C9DB548963BC27279CB9DCB6852A462A7F443CB059416",
         "method_model_sha256": "1877349434ED89329B3DDD8B8644085E1E5DEDAA2F9E492CF6B7072647CF8D3C"
       }
+    },
+    {
+      "prediction_key": "espn-600061267:espn-401911636-20914e3e84b7706f:V2.1-accuracy",
+      "event_id": "espn-600061267",
+      "event_name": "UFC 333: Volkanovski vs. Evloev",
+      "event_date": "2026-10-24",
+      "fight_id": "espn-401911636-20914e3e84b7706f",
+      "fighter_a": "Arnold Allen",
+      "fighter_b": "Aaron Pico",
+      "prediction_timestamp": "2026-09-23T02:53:46.444787+00:00",
+      "model_version": "V2.1-accuracy",
+      "method_model_version": "Method V2.0",
+      "fighter_a_probability": 49.6,
+      "fighter_b_probability": 50.4,
+      "predicted_winner": "Aaron Pico",
+      "predicted_method": "Decision",
+      "actual_winner": null,
+      "actual_method": null,
+      "correct_winner": null,
+      "correct_method": null,
+      "prediction": {
+        "fighter_a": "Arnold Allen",
+        "fighter_b": "Aaron Pico",
+        "fighter_a_probability": 49.6,
+        "fighter_b_probability": 50.4,
+        "predicted_winner": "Aaron Pico",
+        "winner_confidence": "Close fight",
+        "method_probabilities": [
+          {
+            "method": "Decision",
+            "probability": 66.3
+          },
+          {
+            "method": "KO/TKO",
+            "probability": 23.6
+          },
+          {
+            "method": "Submission",
+            "probability": 10.1
+          }
+        ],
+        "conditional_method_probabilities": {
+          "fighter_a": [
+            {
+              "method": "Decision",
+              "probability": 53.2
+            },
+            {
+              "method": "KO/TKO",
+              "probability": 34.7
+            },
+            {
+              "method": "Submission",
+              "probability": 12.1
+            }
+          ],
+          "fighter_b": [
+            {
+              "method": "Decision",
+              "probability": 66.3
+            },
+            {
+              "method": "KO/TKO",
+              "probability": 23.6
+            },
+            {
+              "method": "Submission",
+              "probability": 10.1
+            }
+          ]
+        },
+        "outcome_probabilities": [
+          {
+            "fighter": "Aaron Pico",
+            "method": "Decision",
+            "probability": 33.4
+          },
+          {
+            "fighter": "Arnold Allen",
+            "method": "Decision",
+            "probability": 26.4
+          },
+          {
+            "fighter": "Arnold Allen",
+            "method": "KO/TKO",
+            "probability": 17.22
+          },
+          {
+            "fighter": "Aaron Pico",
+            "method": "KO/TKO",
+            "probability": 11.89
+          },
+          {
+            "fighter": "Arnold Allen",
+            "method": "Submission",
+            "probability": 6.0
+          },
+          {
+            "fighter": "Aaron Pico",
+            "method": "Submission",
+            "probability": 5.09
+          }
+        ],
+        "outcome_probability_total": 100.0,
+        "most_likely_result": {
+          "fighter": "Aaron Pico",
+          "method": "Decision",
+          "probability": 33.4
+        },
+        "predicted_method": "Decision",
+        "method_confidence": "High",
+        "method_model_version": "Method V2.0",
+        "method_context": "3-round bout, Featherweight",
+        "weight_class_matchup": {
+          "winner_division": "featherweight",
+          "opponent_division": "featherweight",
+          "division_distance": 0,
+          "mismatch_category": "NORMAL",
+          "matchup_confidence": "HIGH",
+          "estimated_weight_gap_lbs": 0.0,
+          "relative_weight_gap": 0.0,
+          "warning": null
+        },
+        "mismatch_category": "NORMAL",
+        "matchup_confidence": "HIGH",
+        "matchup_warning": null,
+        "extreme_size_log_odds_adjustment": 0.0,
+        "fighter_a_prediction_mode": "NORMAL",
+        "fighter_b_prediction_mode": "LOW_SAMPLE",
+        "prediction_mode": "LOW_SAMPLE",
+        "fighter_a_prior_ufc_fights": 15,
+        "fighter_b_prior_ufc_fights": 2,
+        "limited_ufc_data": true,
+        "low_data_warning": "Limited UFC data: Aaron Pico has only 2 previous UFC fights.",
+        "factors_for_fighter_a": [
+          {
+            "feature": "average_fight_duration_diff",
+            "features": [
+              "average_fight_duration_diff",
+              "control_pct_decay_548d_diff",
+              "fights_previous_12m_diff",
+              "scheduled_rounds",
+              "ufc_win_pct_diff",
+              "reversals_per15_diff",
+              "division_women",
+              "ufc_losses_diff",
+              "reversals_per15_decay_548d_diff",
+              "takedowns_per15_decay_548d_diff",
+              "takedowns_per15_diff",
+              "last_1_win_diff",
+              "ufc_fights_diff",
+              "form_decay_548d_diff",
+              "decision_rate_diff",
+              "division_middle",
+              "fights_previous_24m_diff",
+              "ufc_wins_diff",
+              "control_pct_diff",
+              "a_td_offense_vs_b_defense",
+              "five_round_experience_diff",
+              "wrestling_matchup_x_division_light",
+              "division_light",
+              "b_td_offense_vs_a_defense",
+              "division_other",
+              "wrestling_matchup_x_division_heavy",
+              "division_heavy",
+              "five_round_fight"
+            ],
+            "category": "Experience",
+            "label": "Experience",
+            "advantage": "Moderate",
+            "explanation": "The accumulated UFC fight and result history favors Arnold Allen in the model.",
+            "log_odds_contribution": 0.2523,
+            "supports": "Arnold Allen"
+          },
+          {
+            "feature": "striking_defense_diff",
+            "features": [
+              "striking_defense_diff",
+              "sig_absorbed_pm_decay_548d_diff",
+              "sig_absorbed_pm_diff",
+              "striking_defense_decay_548d_diff"
+            ],
+            "category": "Striking defense",
+            "label": "Striking defense",
+            "advantage": "Small",
+            "explanation": "Historical significant-strike defense and absorption metrics favor Arnold Allen.",
+            "log_odds_contribution": 0.0705,
+            "supports": "Arnold Allen"
+          },
+          {
+            "feature": "submissions_per15_decay_548d_diff",
+            "features": [
+              "submissions_per15_decay_548d_diff",
+              "submission_rate_diff",
+              "b_submission_threat_vs_a_grappling",
+              "a_submission_threat_vs_b_grappling",
+              "submissions_per15_diff"
+            ],
+            "category": "Submission threat",
+            "label": "Submission threat",
+            "advantage": "Small",
+            "explanation": "Historical submission activity and outcomes favor Arnold Allen.",
+            "log_odds_contribution": 0.0089,
+            "supports": "Arnold Allen"
+          },
+          {
+            "feature": "days_since_last_fight_diff",
+            "features": [
+              "days_since_last_fight_diff"
+            ],
+            "category": "Fight activity",
+            "label": "Fight activity",
+            "advantage": "Small",
+            "explanation": "The time-since-last-fight profile favors Arnold Allen.",
+            "log_odds_contribution": 0.0021,
+            "supports": "Arnold Allen"
+          }
+        ],
+        "factors_for_fighter_b": [
+          {
+            "feature": "age_squared_diff",
+            "features": [
+              "age_squared_diff",
+              "age_diff",
+              "age_diff_x_division_light",
+              "age_x_experience_diff",
+              "age_diff_x_division_heavy",
+              "age_x_layoff_diff"
+            ],
+            "category": "Age",
+            "label": "Age",
+            "advantage": "Moderate",
+            "explanation": "The fighters' age profiles shift the historical model toward Aaron Pico.",
+            "log_odds_contribution": 0.2555,
+            "supports": "Aaron Pico"
+          },
+          {
+            "feature": "ground_strike_share_decay_548d_diff",
+            "features": [
+              "ground_strike_share_decay_548d_diff",
+              "ground_strike_share_diff",
+              "head_strike_share_diff",
+              "leg_strike_share_diff",
+              "strike_volume_pm_diff",
+              "leg_strike_share_decay_548d_diff",
+              "knockdowns_per15_decay_548d_diff",
+              "a_striking_offense_vs_b_defense",
+              "distance_strike_share_diff",
+              "sig_accuracy_decay_548d_diff",
+              "sig_accuracy_diff",
+              "striking_differential_pm_diff",
+              "body_strike_share_decay_548d_diff",
+              "sig_landed_pm_decay_548d_diff",
+              "b_striking_offense_vs_a_defense",
+              "distance_strike_share_decay_548d_diff",
+              "strike_volume_pm_decay_548d_diff",
+              "clinch_strike_share_decay_548d_diff",
+              "sig_landed_pm_diff",
+              "knockdowns_per15_diff",
+              "striking_differential_pm_decay_548d_diff",
+              "clinch_strike_share_diff",
+              "head_strike_share_decay_548d_diff",
+              "body_strike_share_diff"
+            ],
+            "category": "Striking",
+            "label": "Striking",
+            "advantage": "Small",
+            "explanation": "Historical striking output, accuracy, and power metrics favor Aaron Pico.",
+            "log_odds_contribution": 0.0841,
+            "supports": "Aaron Pico"
+          },
+          {
+            "feature": "takedown_accuracy_decay_548d_diff",
+            "features": [
+              "takedown_accuracy_decay_548d_diff",
+              "takedown_accuracy_diff"
+            ],
+            "category": "Wrestling",
+            "label": "Wrestling",
+            "advantage": "Small",
+            "explanation": "The historical takedown-performance matchup favors Aaron Pico.",
+            "log_odds_contribution": 0.0815,
+            "supports": "Aaron Pico"
+          }
+        ],
+        "winner_explanation": [
+          {
+            "feature": "age_squared_diff",
+            "features": [
+              "age_squared_diff",
+              "age_diff",
+              "age_diff_x_division_light",
+              "age_x_experience_diff",
+              "age_diff_x_division_heavy",
+              "age_x_layoff_diff"
+            ],
+            "category": "Age",
+            "label": "Age",
+            "advantage": "Moderate",
+            "explanation": "The fighters' age profiles shift the historical model toward Aaron Pico.",
+            "log_odds_contribution": 0.2555,
+            "supports": "Aaron Pico"
+          },
+          {
+            "feature": "ground_strike_share_decay_548d_diff",
+            "features": [
+              "ground_strike_share_decay_548d_diff",
+              "ground_strike_share_diff",
+              "head_strike_share_diff",
+              "leg_strike_share_diff",
+              "strike_volume_pm_diff",
+              "leg_strike_share_decay_548d_diff",
+              "knockdowns_per15_decay_548d_diff",
+              "a_striking_offense_vs_b_defense",
+              "distance_strike_share_diff",
+              "sig_accuracy_decay_548d_diff",
+              "sig_accuracy_diff",
+              "striking_differential_pm_diff",
+              "body_strike_share_decay_548d_diff",
+              "sig_landed_pm_decay_548d_diff",
+              "b_striking_offense_vs_a_defense",
+              "distance_strike_share_decay_548d_diff",
+              "strike_volume_pm_decay_548d_diff",
+              "clinch_strike_share_decay_548d_diff",
+              "sig_landed_pm_diff",
+              "knockdowns_per15_diff",
+              "striking_differential_pm_decay_548d_diff",
+              "clinch_strike_share_diff",
+              "head_strike_share_decay_548d_diff",
+              "body_strike_share_diff"
+            ],
+            "category": "Striking",
+            "label": "Striking",
+            "advantage": "Small",
+            "explanation": "Historical striking output, accuracy, and power metrics favor Aaron Pico.",
+            "log_odds_contribution": 0.0841,
+            "supports": "Aaron Pico"
+          },
+          {
+            "feature": "takedown_accuracy_decay_548d_diff",
+            "features": [
+              "takedown_accuracy_decay_548d_diff",
+              "takedown_accuracy_diff"
+            ],
+            "category": "Wrestling",
+            "label": "Wrestling",
+            "advantage": "Small",
+            "explanation": "The historical takedown-performance matchup favors Aaron Pico.",
+            "log_odds_contribution": 0.0815,
+            "supports": "Aaron Pico"
+          }
+        ],
+        "explanation_method": "Ensemble sensitivity to training-median feature replacement; effects are not additive.",
+        "model_version": "V2.1-accuracy",
+        "historical_data_through": "2026-06-27",
+        "schedule_source": "ESPN UFC schedule",
+        "schedule_fetched_at": "2026-09-23T02:52:00.663490+00:00",
+        "model_sha256": "5C0725ED3BEC1FF9B82C9DB548963BC27279CB9DCB6852A462A7F443CB059416",
+        "method_model_sha256": "1877349434ED89329B3DDD8B8644085E1E5DEDAA2F9E492CF6B7072647CF8D3C"
+      }
     }
   ]
 }

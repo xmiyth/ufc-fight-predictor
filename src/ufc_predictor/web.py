@@ -675,12 +675,12 @@ def fighter_portrait(name: str = Query(min_length=1, max_length=100),
 @app.get("/predict", include_in_schema=False)
 @app.get("/results", include_in_schema=False)
 def page() -> FileResponse:
-    return FileResponse(INDEX_PATH)
+    return FileResponse(INDEX_PATH, headers={"Cache-Control": "no-store"})
 
 
 @app.get("/event/{event_id}", include_in_schema=False)
 def event_page(event_id: str) -> FileResponse:
-    return FileResponse(INDEX_PATH)
+    return FileResponse(INDEX_PATH, headers={"Cache-Control": "no-store"})
 
 
 @app.get("/api/fighters")
